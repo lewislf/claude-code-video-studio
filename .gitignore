@@ -1,0 +1,13 @@
+__pycache__/
+node_modules/
+.hyperframes/
+.tmp/
+*.mp4
+renders/
+# pipeline outputs in any project (regenerable)
+assets/voice/*.wav
+assets/voice_clean/
+assets/clips/
+assets/music.mp3
+asr-choice.tsv
+snaps/

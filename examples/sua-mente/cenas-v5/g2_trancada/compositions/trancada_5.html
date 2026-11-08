@@ -1,0 +1,93 @@
+<template>
+  <style>
+.cena{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:#0b0a24;font-family:"IBM Plex Mono",monospace}
+.cena .full{position:absolute;inset:0;width:1920px;height:1080px}
+.preto{position:absolute;inset:0;background:#000;pointer-events:none;z-index:50}
+.pill{position:absolute;font:500 28px "IBM Plex Mono",monospace;letter-spacing:.16em;color:#3be0ff;border:2px solid #3be0ff;padding:10px 18px;background:rgba(11,10,36,.78);opacity:0;white-space:nowrap}
+.pill.am{color:#ffb23e;border-color:#ffb23e}.pill.vm{color:#ff4f7d;border-color:#ff4f7d}.pill.li{color:#8d7bff;border-color:#8d7bff}
+.num{position:absolute;font:700 120px "EB Garamond",serif;color:#eef1f7;opacity:0;text-shadow:0 4px 30px #000;white-space:nowrap}
+.num small{display:block;font:400 30px "IBM Plex Mono",monospace;letter-spacing:.14em;color:#3be0ff;margin-top:-6px}
+
+.tit{position:absolute;font:700 132px "EB Garamond",serif;color:#eef1f7;opacity:0;text-shadow:0 6px 40px rgba(0,0,0,.7);white-space:nowrap;letter-spacing:.02em}
+.tit small{display:block;font:500 30px "IBM Plex Mono",monospace;letter-spacing:.2em;color:#ffb23e;margin-top:-4px}
+.pill2{position:absolute;font:500 36px "IBM Plex Mono",monospace;letter-spacing:.14em;color:#eef1f7;opacity:0;white-space:nowrap;text-shadow:0 4px 24px #000}
+.pill2 i{display:inline-block;width:18px;height:18px;border-radius:50%;margin-right:14px;vertical-align:-2px}
+</style>
+  <div id="trancada_5-root" data-composition-id="trancada_5" data-width="1920" data-height="1080">
+    <div class="cena">
+    <svg id="trancada_5-svg" class="full" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"><defs>
+<radialGradient id="trancada_5-fundo" cx="50%" cy="46%" r="78%"><stop offset="0" stop-color="#3a1d7a"/><stop offset=".55" stop-color="#1a1050"/><stop offset="1" stop-color="#0b0a24"/></radialGradient>
+<radialGradient id="trancada_5-vig" cx="50%" cy="50%" r="72%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".62"/></radialGradient>
+<filter id="trancada_5-glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="trancada_5-blur40" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="42"/></filter>
+<filter id="trancada_5-blur6" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+<filter id="trancada_5-sombra" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#05031a" flood-opacity=".6"/></filter>
+<linearGradient id="trancada_5-par" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#18144a"/><stop offset="1" stop-color="#2a2474"/></linearGradient><linearGradient id="trancada_5-fx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd27a" stop-opacity=".8"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></linearGradient></defs>
+<rect width="1920" height="1080" fill="url(#trancada_5-fundo)"/><g id="trancada_5-bokeh" filter="url(#trancada_5-blur40)"><circle cx="457" cy="588" r="160" fill="#ffb23e" opacity="0.12"/><circle cx="126" cy="14" r="249" fill="#ff4fa3" opacity="0.11"/><circle cx="368" cy="775" r="193" fill="#ffb23e" opacity="0.10"/><circle cx="1653" cy="250" r="119" fill="#ffb23e" opacity="0.13"/><circle cx="1289" cy="69" r="234" fill="#3be0ff" opacity="0.09"/><circle cx="60" cy="935" r="180" fill="#ffb23e" opacity="0.12"/><circle cx="1769" cy="427" r="242" fill="#ffb23e" opacity="0.15"/><circle cx="258" cy="395" r="97" fill="#ffb23e" opacity="0.08"/><circle cx="1854" cy="471" r="209" fill="#ff4fa3" opacity="0.10"/><circle cx="1600" cy="620" r="191" fill="#ffb23e" opacity="0.11"/></g><g id="trancada_5-part"></g><g id="trancada_5-cam"><rect x="-1500" y="-1500" width="4920" height="2360" fill="url(#trancada_5-par)"/><rect x="-1500" y="860" width="4920" height="1600" fill="#100c34"/><rect x="-1500" y="854" width="4920" height="12" fill="#3a3290"/>
+<g id="trancada_5-fresta" opacity=".35" filter="url(#trancada_5-glow)"><rect x="766" y="210" width="8" height="620" fill="#ffd27a"/><rect x="1146" y="210" width="8" height="620" fill="#ffd27a"/><rect x="770" y="824" width="380" height="10" fill="#ffd27a"/></g><polygon id="trancada_5-feixe" points="770,830 1150,830 1410,1080 510,1080" fill="url(#trancada_5-fx)" opacity=".3"/>
+<g filter="url(#trancada_5-sombra)"><rect x="744" y="184" width="432" height="646" rx="10" fill="#1d1752"/></g><rect x="744" y="184" width="432" height="646" rx="10" fill="none" stroke="#8d7bff" stroke-width="6" filter="url(#trancada_5-glow)"/><rect x="770" y="210" width="380" height="620" fill="#ffd27a"/><g id="trancada_5-fl0"><rect x="770" y="210" width="380" height="620" fill="#2a2068" stroke="#5a4cc0" stroke-width="4"/><rect x="823" y="253" width="274" height="223" rx="8" fill="none" stroke="#5a4cc0" stroke-width="4"/><rect x="823" y="532" width="274" height="248" rx="8" fill="none" stroke="#5a4cc0" stroke-width="4"/><circle cx="1097" cy="520" r="17" fill="#ffb23e"/></g>
+<g transform="translate(961.0 580.0)"><g id="trancada_5-cadW" opacity="0"><g transform="scale(1.4)"><g id="trancada_5-cad0"><rect x="-70" y="-95" width="140" height="190" fill="none" opacity="0"/><g id="trancada_5-arg0"><path d="M-38 -6 L-38 -46 A38 38 0 0 1 38 -46 L38 -6" fill="none" stroke="#d9dcf0" stroke-width="15" stroke-linecap="round"/></g><rect x="-60" y="-12" width="120" height="96" rx="18" fill="#ffb23e" stroke="#fff3c8" stroke-width="4"/><rect x="-60" y="-12" width="120" height="30" rx="14" fill="#fff" opacity=".22"/><circle cx="0" cy="26" r="13" fill="#2a1446"/><path d="M-6 30 L-9 58 L9 58 L6 30 Z" fill="#2a1446"/></g></g></g></g>
+<g id="trancada_5-corr"><rect x="726" y="480" width="26" height="80" rx="6" fill="#9aa0c8" stroke="#eef1f7" stroke-width="3"/><rect x="1168" y="480" width="26" height="80" rx="6" fill="#9aa0c8" stroke="#eef1f7" stroke-width="3"/><g fill="none" stroke="#c9cce8" stroke-width="14"><ellipse cx="744" cy="520" rx="30" ry="15"/><ellipse cx="792" cy="520" rx="30" ry="15"/><ellipse cx="840" cy="520" rx="30" ry="15"/><ellipse cx="888" cy="520" rx="30" ry="15"/><ellipse cx="936" cy="520" rx="30" ry="15"/><ellipse cx="984" cy="520" rx="30" ry="15"/><ellipse cx="1032" cy="520" rx="30" ry="15"/><ellipse cx="1080" cy="520" rx="30" ry="15"/><ellipse cx="1128" cy="520" rx="30" ry="15"/><ellipse cx="1176" cy="520" rx="30" ry="15"/></g></g></g><rect width="1920" height="1080" fill="url(#trancada_5-vig)" pointer-events="none"/></svg>
+    <div id="trancada_5-t1" class="tit" style="left:0;right:0;text-align:center;top:40px;font-size:92px;color:#ffd98a;;opacity:1;overflow:hidden;height:1.3em;line-height:1.3em"><span style="display:block">NÃO TINHA SIDO APAGADA</span></div><div id="trancada_5-t2" class="tit" style="left:0;right:0;text-align:center;top:920px;font-size:92px;color:#bff4ff;;opacity:1;overflow:hidden;height:1.3em;line-height:1.3em"><span style="display:block">SÓ ESTAVA SEM ACESSO</span></div>
+    <div id="trancada_5-preto" class="preto"></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    
+(function(){var s=7;var r=function(){s=(s+0x6d2b79f5)|0;var t=Math.imul(s^(s>>>15),1|s);t=(t+Math.imul(t^(t>>>7),61|t))^t;return((t^(t>>>14))>>>0)/4294967296;};
+var g=document.getElementById("trancada_5-part"),cores=["#3be0ff","#8d7bff","#ff9bd0","#ffd23e"];
+for(var i=0;i<30;i++){var c=document.createElementNS("http://www.w3.org/2000/svg","circle");
+c.setAttribute("id","trancada_5p"+i);c.setAttribute("cx",Math.round(r()*1920));c.setAttribute("cy",Math.round(200+r()*880));
+c.setAttribute("r",(2+r()*4).toFixed(1));c.setAttribute("fill",cores[i%4]);c.setAttribute("opacity",(0.2+r()*0.45).toFixed(2));g.appendChild(c);
+tl.fromTo("#trancada_5p"+i,{y:0},{y:-(100+r()*240),duration:5.73,ease:"none"},0);}})();
+
+    tl.fromTo("#trancada_5-bokeh",{x:0,y:0},{x:-70,y:-34,duration:5.73,ease:"none"},0);
+    
+  function camZ(sel,t0,dur,z0,z1,ox,oy,ease){
+    var o={l:Math.log(z0)};
+    tl.set(sel,{scale:z0,svgOrigin:ox+" "+oy},t0>0?0:t0);
+    tl.to(o,{l:Math.log(z1),duration:dur,ease:ease||"power3.inOut",onUpdate:function(){gsap.set(sel,{scale:Math.exp(o.l),svgOrigin:ox+" "+oy});},immediateRender:false},t0);
+  }
+  function pop(sel,t,from,dur){
+    tl.fromTo(sel,{scale:from||0.3,opacity:0,transformOrigin:"50% 50%"},{scale:1,opacity:1,duration:dur||0.7,ease:"elastic.out(1,0.45)",immediateRender:false},t);
+    tl.set(sel,{opacity:0},0);
+  }
+  function rise(sel,t,dur){
+    tl.fromTo(sel,{yPercent:125},{yPercent:0,duration:dur||0.75,ease:"expo.out",immediateRender:true},t);
+  }
+  function contar(id,t0,dur,v0,v1,fmt){
+    var o={v:v0};
+    tl.fromTo(o,{v:v0},{v:v1,duration:dur,ease:"power2.out",onUpdate:function(){var e=document.getElementById(id);if(e)e.textContent=fmt?fmt(o.v):Math.round(o.v);}},t0);
+  }
+  function some(sel,t,dur){tl.fromTo(sel,{opacity:1},{opacity:0,duration:dur||0.4,immediateRender:false},t);}
+  function entra(sel,t,dur){tl.fromTo(sel,{opacity:0},{opacity:1,duration:dur||0.5},t);}
+
+  function _el(s){return document.querySelector(s);}
+  function camT(st){var z=st[0];return "translate("+(st[3]-z*st[1]).toFixed(2)+" "+(st[4]-z*st[2]).toFixed(2)+") scale("+z.toFixed(4)+")";}
+  function camK(sel,t0,dur,a,b,ease){var e=_el(sel),o={k:0};
+    tl.fromTo(o,{k:0},{k:1,duration:dur,ease:ease||"power3.inOut",immediateRender:false,onUpdate:function(){var k=o.k;
+      var z=Math.exp(Math.log(a[0])+(Math.log(b[0])-Math.log(a[0]))*k);
+      e.setAttribute("transform",camT([z,a[1]+(b[1]-a[1])*k,a[2]+(b[2]-a[2])*k,a[3]+(b[3]-a[3])*k,a[4]+(b[4]-a[4])*k]));}},t0);}
+  function trT(st){return "translate("+st[0].toFixed(2)+" "+st[1].toFixed(2)+") rotate("+(st[3]||0).toFixed(2)+") scale("+st[2].toFixed(4)+")";}
+  function trK(sel,t0,dur,a,b,ease){var e=_el(sel),o={k:0};
+    tl.fromTo(o,{k:0},{k:1,duration:dur,ease:ease||"power3.inOut",immediateRender:false,onUpdate:function(){var k=o.k,r=[];
+      for(var i=0;i<4;i++){r.push((a[i]||0)+((b[i]||0)-(a[i]||0))*k);} e.setAttribute("transform",trT(r));}},t0);}
+_el("#trancada_5-cam").setAttribute("transform",camT([1.0, 960, 540, 960, 540]));camK("#trancada_5-cam",0.00,5.73,[1.0, 960, 540, 960, 540],[1.12, 960, 520, 960, 540],"sine.inOut");
+  rise("#trancada_5-t1 span", 0.51, 0.8);
+  tl.fromTo("#trancada_5-fl0",{scaleX:1,transformOrigin:"0% 50%"},{scaleX:0.82,transformOrigin:"0% 50%",duration:0.5,ease:"power2.out"},1.12);
+  tl.fromTo("#trancada_5-fresta",{opacity:0.35},{opacity:1,duration:0.5},1.12);
+  tl.fromTo("#trancada_5-feixe",{opacity:0.3},{opacity:1,duration:0.6},1.12);
+  tl.fromTo("#trancada_5-fl0",{scaleX:0.82},{scaleX:1,transformOrigin:"0% 50%",duration:0.2,ease:"power4.in",immediateRender:false},2.25);
+  tl.fromTo("#trancada_5-fresta",{opacity:1},{opacity:0.6,duration:0.3,immediateRender:false},2.35);
+  tl.fromTo("#trancada_5-feixe",{opacity:1},{opacity:0.45,duration:0.3,immediateRender:false},2.35);
+  tl.fromTo("#trancada_5-corr ellipse, #trancada_5-corr rect",{opacity:0,y:-60},{opacity:1,y:0,duration:0.25,stagger:0.04,ease:"power2.out"},2.45);
+  tl.fromTo("#trancada_5-cadW",{opacity:0,y:-500},{opacity:1,y:0,duration:0.55,ease:"bounce.out"},2.81);
+  rise("#trancada_5-t2 span", 3.26, 0.8);
+  tl.fromTo("#trancada_5-fresta",{opacity:0.6},{opacity:0.95,duration:0.9,repeat:2,yoyo:true,ease:"sine.inOut",immediateRender:false},3.56);
+
+    tl.fromTo("#trancada_5-preto", { opacity: 1 }, { opacity: 0, duration: 0.4, ease: "none" }, 0);
+    tl.fromTo("#trancada_5-preto", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "none", immediateRender: false }, 5.33);
+    window.__timelines["trancada_5"] = tl;
+  </script>
+</template>

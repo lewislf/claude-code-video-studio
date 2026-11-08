@@ -1,0 +1,12 @@
+{
+  "nome": "terror_grave_lento",
+  "uso": "narrador de terror/investigativo, pt",
+  "modelo": "k2-fsa/OmniVoice",
+  "language": "Portuguese",
+  "instruct": "male, middle-aged, very low pitch",
+  "speed": 0.85,
+  "guidance_scale": 2.0,
+  "num_step": 32,
+  "medido": {"f0_med_hz": 105, "centroide": 1809},
+  "nota": "gerada sem seed fixa: o .wav ao lado é a amostra aprovada; novas falas com os mesmos parâmetros mudam um pouco o timbre. Use seed fixa (torch.manual_seed) para repetir."
+}

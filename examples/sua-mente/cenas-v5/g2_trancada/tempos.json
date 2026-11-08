@@ -1,0 +1,17 @@
+{
+ "inicio": {
+  "trancada_0": 0.0,
+  "trancada_1": 6.98,
+  "trancada_3": 19.81,
+  "trancada_6": 36.87,
+  "trancada_8": 56.73
+ },
+ "dur": {
+  "trancada_0": 6.48,
+  "trancada_1": 12.33,
+  "trancada_3": 16.56,
+  "trancada_6": 19.36,
+  "trancada_8": 15.58
+ },
+ "total": 72.31
+}

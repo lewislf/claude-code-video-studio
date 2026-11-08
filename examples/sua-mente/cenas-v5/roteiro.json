@@ -1,0 +1,1155 @@
+{
+ "abertura": [
+  {
+   "i": 0,
+   "ini": 0.0,
+   "dur": 10.99,
+   "a": "camundongo",
+   "texto": "Em dois mil e treze, num laboratório do MIT, nos Estados Unidos, um camundongo entrou numa caixa onde nunca tinha acontecido nada com ele.",
+   "vis": {
+    "a": "camundongo",
+    "estado": "calma",
+    "r": "pesquisa",
+    "sobre": "MIT · ESTADOS UNIDOS · 2013"
+   }
+  },
+  {
+   "i": 1,
+   "ini": 10.99,
+   "dur": 2.49,
+   "a": "camundongo",
+   "texto": "E congelou de medo.",
+   "vis": {
+    "a": "camundongo",
+    "estado": "medo",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 2,
+   "ini": 13.48,
+   "dur": 8.3,
+   "a": "frase",
+   "texto": "Ele se lembrava de levar um choque ali. Só que esse choque nunca aconteceu naquela caixa.",
+   "vis": {
+    "a": "frase",
+    "texto": "O choque nunca aconteceu ali."
+   }
+  },
+  {
+   "i": 3,
+   "ini": 21.78,
+   "dur": 5.61,
+   "a": "flash",
+   "texto": "Alguém escreveu essa lembrança nele. Com luz.",
+   "vis": {
+    "a": "flash",
+    "texto": "Com luz."
+   }
+  },
+  {
+   "i": 4,
+   "ini": 27.39,
+   "dur": 14.23,
+   "a": "pergunta",
+   "texto": "Este vídeo é sobre uma pergunta. Quem tem o poder de entrar na sua mente? De trancar uma lembrança, escrever outra, ler o que você pensa, ou decidir que realidade você vai enxergar?",
+   "vis": {
+    "a": "pergunta",
+    "linhas": [
+     "trancar",
+     "escrever",
+     "ler",
+     "decidir o que você vê"
+    ]
+   }
+  },
+  {
+   "i": 5,
+   "ini": 41.62,
+   "dur": 13.79,
+   "a": "trio_ficcao",
+   "texto": "A ficção já imaginou tudo isso. Uma empresa que divide a sua memória em duas. Máquinas que fabricam o mundo que você vê. Uma inteligência artificial que castiga quem não obedece.",
+   "vis": {
+    "a": "trio_ficcao",
+    "r": "ficcao"
+   }
+  },
+  {
+   "i": 6,
+   "ini": 55.41,
+   "dur": 5.81,
+   "a": "frase",
+   "texto": "A ciência, por enquanto, fez só pedaços. Mas são pedaços reais.",
+   "vis": {
+    "a": "frase",
+    "texto": "Pedaços reais."
+   }
+  },
+  {
+   "i": 7,
+   "ini": 61.22,
+   "dur": 14.95,
+   "a": "arquivos_mesa",
+   "texto": "Nos próximos minutos, a gente vai abrir esses arquivos um por um. Separar o que já aconteceu do que ainda é só medo. E chegar numa conclusão desconfortável: o perigo talvez não seja o robô mau.",
+   "vis": {
+    "a": "arquivos_mesa"
+   }
+  },
+  {
+   "i": 8,
+   "ini": 76.17,
+   "dur": 4.81,
+   "a": "titulo",
+   "texto": "Guarde uma pergunta. Quem tem a chave?",
+   "vis": {
+    "a": "titulo",
+    "texto": "Quem tem a chave?",
+    "titulo": "SUA MENTE EM TERMOS DE USO"
+   }
+  }
+ ],
+ "contrato": [
+  {
+   "i": 0,
+   "ini": 0.0,
+   "dur": 15.1,
+   "a": "escritorio",
+   "texto": "Imagine uma proposta de emprego com um benefício estranho. Ao sair do escritório, você esquece tudo o que aconteceu lá dentro. As cobranças ficam no trabalho. Os conflitos não vão para casa.",
+   "vis": {
+    "a": "escritorio"
+   }
+  },
+  {
+   "i": 1,
+   "ini": 15.1,
+   "dur": 15.05,
+   "a": "ruptura",
+   "texto": "É a premissa da série Ruptura. Os funcionários da Lumon passam por uma cirurgia que divide a memória em duas. Lá dentro, eles não sabem quem são lá fora. Lá fora, não sabem o que fazem lá dentro.",
+   "vis": {
+    "a": "ruptura",
+    "r": "ficcao",
+    "fonte": "Ruptura (Severance) · Apple TV · 2022"
+   }
+  },
+  {
+   "i": 2,
+   "ini": 30.15,
+   "dur": 4.55,
+   "a": "frase",
+   "texto": "Parece um alívio. Mas olhe o contrato com calma.",
+   "vis": {
+    "a": "frase",
+    "texto": "Olhe o contrato com calma.",
+    "r": "ficcao"
+   }
+  },
+  {
+   "i": 3,
+   "ini": 34.7,
+   "dur": 11.95,
+   "a": "contrato",
+   "texto": "Quem assinou foi a pessoa de fora. Quem trabalha, sofre e obedece é a de dentro. E a de dentro nunca concordou com nada. Ela já nasceu empregada.",
+   "vis": {
+    "a": "contrato",
+    "r": "ficcao"
+   }
+  },
+  {
+   "i": 4,
+   "ini": 46.65,
+   "dur": 14.66,
+   "a": "frase",
+   "texto": "É o problema do consentimento levado ao extremo. Como alguém aceita uma condição que nunca vai conseguir lembrar? E se recusar custasse o emprego, essa escolha seria livre?",
+   "vis": {
+    "a": "frase",
+    "texto": "Essa escolha seria livre?",
+    "r": "ficcao"
+   }
+  },
+  {
+   "i": 5,
+   "ini": 61.31,
+   "dur": 14.82,
+   "a": "porta",
+   "texto": "Ruptura é ficção. Ninguém sabe dividir uma memória assim. Mas a ideia de que uma lembrança pode ficar trancada, e de que alguém pode guardar a chave, não é tão ficcional quanto parece.",
+   "vis": {
+    "a": "porta",
+    "fase": "fechada"
+   }
+  }
+ ],
+ "trancada": [
+  {
+   "i": 0,
+   "ini": 0.0,
+   "dur": 6.48,
+   "a": "porta",
+   "texto": "Comece pelo mais simples. Você já entrou num cômodo e esqueceu o que ia fazer lá?",
+   "vis": {
+    "a": "porta",
+    "fase": "atravessa"
+   }
+  },
+  {
+   "i": 1,
+   "ini": 6.48,
+   "dur": 12.33,
+   "a": "doc",
+   "texto": "Pesquisadores chamam isso de efeito da porta. Em dois mil e seis, um estudo mostrou que atravessar uma porta pode atrapalhar a lembrança do que você acabou de fazer.",
+   "vis": {
+    "a": "doc",
+    "img": "radvansky2006",
+    "revista": "Memory & Cognition",
+    "ano": "2006",
+    "titulo": "Walking through doorways causes forgetting",
+    "autores": "Radvansky e Copeland",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 2,
+   "ini": 18.81,
+   "dur": 17.42,
+   "a": "episodios",
+   "texto": "Uma explicação é que o cérebro organiza a vida em episódios, e a porta marca o fim de um. O efeito é pequeno e nem sempre aparece. Mas mostra uma coisa: lembrar é abrir um caminho. E o caminho pode falhar.",
+   "vis": {
+    "a": "episodios",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 3,
+   "ini": 36.23,
+   "dur": 16.56,
+   "a": "trauma",
+   "texto": "Com o trauma, isso fica sério. Quem passa por uma violência pode não conseguir lembrar do que aconteceu. E, mesmo assim, o corpo reage. Um cheiro, um som, um lugar, e o medo volta inteiro, sem aviso.",
+   "vis": {
+    "a": "trauma"
+   }
+  },
+  {
+   "i": 4,
+   "ini": 52.79,
+   "dur": 16.36,
+   "a": "doc",
+   "texto": "Em dois mil e quinze, a mesma equipe do MIT testou isso em camundongos com amnésia. As lembranças pareciam perdidas. Mas, quando os cientistas acenderam com luz os neurônios certos, a memória voltou.",
+   "vis": {
+    "a": "doc",
+    "img": "ryan2015",
+    "revista": "Science",
+    "ano": "2015",
+    "titulo": "Engram cells retain memory under retrograde amnesia",
+    "autores": "Ryan, Roy, Pignatelli, Arons e Tonegawa",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 5,
+   "ini": 69.15,
+   "dur": 5.73,
+   "a": "frase",
+   "texto": "Ela não tinha sido apagada. Só estava sem acesso.",
+   "vis": {
+    "a": "frase",
+    "texto": "Não apagada. Sem acesso."
+   }
+  },
+  {
+   "i": 6,
+   "ini": 74.88,
+   "dur": 19.36,
+   "a": "remedio",
+   "texto": "E já existem tentativas de mexer nessa porta em pessoas. Em alguns estudos, pacientes com estresse pós-traumático tomaram um remédio comum para pressão, o propranolol, antes de relembrar o trauma. A ideia é diminuir a carga emocional da lembrança.",
+   "vis": {
+    "a": "remedio",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 7,
+   "ini": 94.24,
+   "dur": 12.96,
+   "a": "placar",
+   "texto": "Um estudo de dois mil e dezoito teve resultado positivo. Outro, de dois mil e quinze, não conseguiu repetir um resultado anterior. A ciência ainda está discutindo.",
+   "vis": {
+    "a": "placar",
+    "r": "pesquisa",
+    "itens": [
+     [
+      "2018",
+      "Brunet e outros",
+      "resultado positivo"
+     ],
+     [
+      "2015",
+      "Wood e outros",
+      "não repetiu o efeito"
+     ]
+    ]
+   }
+  },
+  {
+   "i": 8,
+   "ini": 107.2,
+   "dur": 15.58,
+   "a": "quem_decide",
+   "texto": "Para quem sofre, isso pode ser uma libertação. Mas fica uma pergunta. Quem decide qual lembrança dói demais? O paciente? O médico? O empregador? O Estado?",
+   "vis": {
+    "a": "quem_decide",
+    "itens": [
+     "o paciente?",
+     "o médico?",
+     "o empregador?",
+     "o Estado?"
+    ]
+   }
+  }
+ ],
+ "escrever": [
+  {
+   "i": 0,
+   "ini": 0.0,
+   "dur": 3.32,
+   "a": "arquivo",
+   "texto": "Arquivo um. Escrever.",
+   "vis": {
+    "a": "arquivo",
+    "n": "1",
+    "nome": "ESCREVER"
+   }
+  },
+  {
+   "i": 1,
+   "ini": 3.32,
+   "dur": 15.22,
+   "a": "neuronios",
+   "texto": "Volte ao camundongo do começo. Cada vez que você vive alguma coisa, um grupo de neurônios se acende junto. Os cientistas chamam esse grupo de engrama. É o lugar físico de uma lembrança.",
+   "vis": {
+    "a": "neuronios",
+    "r": "pesquisa",
+    "legenda": "engrama"
+   }
+  },
+  {
+   "i": 2,
+   "ini": 18.54,
+   "dur": 14.62,
+   "a": "doc",
+   "texto": "A equipe de Susumu Tonegawa, ganhador do Nobel, marcou os neurônios que se acendiam quando o camundongo explorava uma caixa tranquila. Esses neurônios foram modificados para responder à luz.",
+   "vis": {
+    "a": "doc",
+    "img": "ramirez2013",
+    "revista": "Science",
+    "ano": "2013",
+    "titulo": "Creating a False Memory in the Hippocampus",
+    "autores": "Ramirez, Liu e outros · laboratório de Susumu Tonegawa",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 3,
+   "ini": 33.16,
+   "dur": 12.05,
+   "a": "caixas",
+   "texto": "Depois, levaram o animal para outra caixa. Ali, ele levou um choque. E, no exato momento do choque, os cientistas acenderam a lembrança da primeira caixa.",
+   "vis": {
+    "a": "caixas",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 4,
+   "ini": 45.21,
+   "dur": 10.86,
+   "a": "camundongo",
+   "texto": "O cérebro juntou as duas coisas. De volta à caixa tranquila, o camundongo congelou. Tinha medo de um lugar onde nada tinha acontecido.",
+   "vis": {
+    "a": "camundongo",
+    "estado": "medo",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 5,
+   "ini": 56.07,
+   "dur": 12.67,
+   "a": "citacao",
+   "texto": "Segundo os pesquisadores, o cérebro usa o mesmo mecanismo para lembrar uma memória falsa e uma verdadeira. De dentro, não dá para saber a diferença.",
+   "vis": {
+    "a": "citacao",
+    "texto": "Seja a memória falsa ou verdadeira, o mecanismo do cérebro para lembrá-la é o mesmo.",
+    "fonte": "Susumu Tonegawa · MIT News, 2013 (tradução livre)"
+   }
+  },
+  {
+   "i": 6,
+   "ini": 68.74,
+   "dur": 11.96,
+   "a": "camundongo",
+   "texto": "É um camundongo, modificado geneticamente, com uma fibra de luz implantada no cérebro. Ninguém fez isso numa pessoa, e não existe hoje forma de fazer.",
+   "vis": {
+    "a": "camundongo",
+    "estado": "calma",
+    "r": "pesquisa",
+    "sobre": "CAMUNDONGO MODIFICADO · FIBRA ÓPTICA NO CÉREBRO"
+   }
+  },
+  {
+   "i": 7,
+   "ini": 80.7,
+   "dur": 16.5,
+   "a": "frase",
+   "texto": "Mas o experimento prova uma coisa que assusta. A memória não é um arquivo lacrado. Ela pode ser editada por fora. E se uma lembrança pode ser escrita por outra pessoa, como você confia nas suas?",
+   "vis": {
+    "a": "frase",
+    "texto": "Como você confia nas suas?"
+   }
+  }
+ ],
+ "mapear": [
+  {
+   "i": 0,
+   "ini": 0.0,
+   "dur": 3.34,
+   "a": "arquivo",
+   "texto": "Arquivo dois. Mapear.",
+   "vis": {
+    "a": "arquivo",
+    "n": "2",
+    "nome": "MAPEAR"
+   }
+  },
+  {
+   "i": 1,
+   "ini": 3.34,
+   "dur": 11.66,
+   "a": "mosca",
+   "texto": "Para escrever numa mente, primeiro é preciso saber onde está cada coisa. Então os cientistas começaram por um cérebro pequeno. O de uma mosca.",
+   "vis": {
+    "a": "mosca",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 2,
+   "ini": 15.0,
+   "dur": 18.48,
+   "a": "conectoma",
+   "texto": "A mosca-da-fruta tem um cérebro menor que uma semente de papoula. Em dois mil e vinte e quatro, o projeto FlyWire publicou o mapa completo dele: cento e trinta e nove mil neurônios, e cerca de cinquenta milhões de conexões.",
+   "vis": {
+    "a": "conectoma",
+    "r": "pesquisa",
+    "num": "139.255",
+    "leg": "neurônios",
+    "num2": "~50 milhões",
+    "leg2": "conexões",
+    "fonte": "Dorkenwald e outros · Nature · 2024"
+   }
+  },
+  {
+   "i": 3,
+   "ini": 33.48,
+   "dur": 17.14,
+   "a": "fatias",
+   "texto": "O cérebro foi fatiado em camadas finíssimas e fotografado num microscópio eletrônico. Uma inteligência artificial traçou cada neurônio. E centenas de pesquisadores e voluntários corrigiram os erros, como num jogo.",
+   "vis": {
+    "a": "fatias",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 4,
+   "ini": 50.62,
+   "dur": 11.82,
+   "a": "comparacao",
+   "texto": "Foram trinta e três anos de trabalho humano, somados. Sem a inteligência artificial, segundo um dos líderes do projeto, seriam quase cinquenta mil.",
+   "vis": {
+    "a": "comparacao",
+    "r": "pesquisa",
+    "a1": "33 anos",
+    "l1": "com IA",
+    "a2": "~50.000 anos",
+    "l2": "sem IA",
+    "fonte": "Princeton University · 2024"
+   }
+  },
+  {
+   "i": 5,
+   "ini": 62.44,
+   "dur": 10.67,
+   "a": "conectoma",
+   "texto": "Aí veio o passo seguinte. Outra equipe pegou esse mapa e colocou para funcionar num computador. Um cérebro de mosca, simulado.",
+   "vis": {
+    "a": "conectoma",
+    "modo": "simula",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 6,
+   "ini": 73.11,
+   "dur": 15.71,
+   "a": "doc",
+   "texto": "Quando ativaram, na simulação, os neurônios que sentem açúcar, o modelo previu quais neurônios fariam a mosca começar a comer. Depois, testaram em moscas de verdade. E várias previsões se confirmaram.",
+   "vis": {
+    "a": "doc",
+    "img": "shiu2024",
+    "revista": "Nature",
+    "ano": "2024",
+    "titulo": "A Drosophila computational brain model reveals sensorimotor processing",
+    "autores": "Shiu e outros",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 7,
+   "ini": 88.82,
+   "dur": 11.85,
+   "a": "frase",
+   "texto": "Repare no que isso quer dizer. Um cérebro virou um mapa. E o mapa, rodando num computador, começou a se comportar como um cérebro.",
+   "vis": {
+    "a": "frase",
+    "texto": "O mapa começou a se comportar como um cérebro."
+   }
+  },
+  {
+   "i": 8,
+   "ini": 100.67,
+   "dur": 15.38,
+   "a": "conectoma",
+   "texto": "É uma mosca, e o modelo é bem simplificado. Mapear conexões não é copiar uma consciência. Mas guarde essa imagem: um cérebro rodando dentro de um computador. Ela vai voltar.",
+   "vis": {
+    "a": "conectoma",
+    "r": "pesquisa"
+   }
+  }
+ ],
+ "ler": [
+  {
+   "i": 0,
+   "ini": 0.0,
+   "dur": 2.88,
+   "a": "arquivo",
+   "texto": "Arquivo três. Ler.",
+   "vis": {
+    "a": "arquivo",
+    "n": "3",
+    "nome": "LER"
+   }
+  },
+  {
+   "i": 1,
+   "ini": 2.88,
+   "dur": 6.14,
+   "a": "frase",
+   "texto": "Mapear o cérebro de uma mosca é uma coisa. Ler um cérebro humano vivo é outra.",
+   "vis": {
+    "a": "frase",
+    "texto": "Ler um cérebro vivo."
+   }
+  },
+  {
+   "i": 2,
+   "ini": 9.02,
+   "dur": 15.42,
+   "a": "hospital",
+   "texto": "Dois mil e seis, Reino Unido. Uma mulher de vinte e três anos sofre um acidente de carro. Cinco meses depois, ela dorme e acorda, mas não responde a nada. O diagnóstico é estado vegetativo.",
+   "vis": {
+    "a": "hospital",
+    "local": "REINO UNIDO · 2005",
+    "r": "caso"
+   }
+  },
+  {
+   "i": 3,
+   "ini": 24.44,
+   "dur": 9.39,
+   "a": "doc",
+   "texto": "O neurocientista Adrian Owen coloca essa mulher numa máquina de ressonância e pede: imagine que você está jogando tênis.",
+   "vis": {
+    "a": "doc",
+    "img": "owen2006",
+    "revista": "Science",
+    "ano": "2006",
+    "titulo": "Detecting Awareness in the Vegetative State",
+    "autores": "Owen e outros",
+    "r": "caso"
+   }
+  },
+  {
+   "i": 4,
+   "ini": 33.83,
+   "dur": 12.4,
+   "a": "cerebros",
+   "texto": "O cérebro dela responde. Do mesmo jeito que o de pessoas saudáveis. Ela estava ouvindo. Presa dentro do próprio corpo, sem conseguir avisar.",
+   "vis": {
+    "a": "cerebros",
+    "r": "caso"
+   }
+  },
+  {
+   "i": 5,
+   "ini": 46.23,
+   "dur": 15.7,
+   "a": "quatro",
+   "texto": "Houve contestação, e a discussão durou anos. Em dois mil e vinte e quatro, um estudo com duzentos e quarenta e um pacientes que não respondiam a nada encontrou sinais de consciência em um de cada quatro.",
+   "vis": {
+    "a": "quatro",
+    "r": "pesquisa",
+    "fonte": "60 de 241 (25%) · Bodien e outros · NEJM · 2024"
+   }
+  },
+  {
+   "i": 6,
+   "ini": 61.93,
+   "dur": 6.99,
+   "a": "porta",
+   "texto": "Para essas pessoas, a única porta para fora da própria cabeça era uma máquina.",
+   "vis": {
+    "a": "porta",
+    "fase": "fresta"
+   }
+  },
+  {
+   "i": 7,
+   "ini": 68.92,
+   "dur": 15.15,
+   "a": "cursor",
+   "texto": "E máquinas assim já estão devolvendo autonomia. Em dois mil e vinte e quatro, a Neuralink mostrou um participante com paralisia movendo um cursor só com sinais do cérebro, por um implante.",
+   "vis": {
+    "a": "cursor",
+    "r": "caso",
+    "fonte": "Neuralink · demonstração da empresa · 2024",
+    "calmo": true
+   }
+  },
+  {
+   "i": 8,
+   "ini": 84.07,
+   "dur": 12.91,
+   "a": "doc",
+   "texto": "Sem cirurgia, uma equipe da Universidade do Texas usou ressonância e um modelo de linguagem para reconstruir a ideia geral de histórias que voluntários ouviam ou imaginavam.",
+   "vis": {
+    "a": "doc",
+    "img": "tang2023",
+    "revista": "Nature Neuroscience",
+    "ano": "2023",
+    "titulo": "Semantic reconstruction of continuous language from non-invasive brain recordings",
+    "autores": "Tang, LeBel, Jain e Huth",
+    "r": "pesquisa",
+    "calmo": true
+   }
+  },
+  {
+   "i": 9,
+   "ini": 96.98,
+   "dur": 12.46,
+   "a": "porta",
+   "texto": "Não era palavra por palavra. Cada voluntário treinou o sistema por cerca de dezesseis horas. E, quando resistia pensando em outra coisa, o sistema falhava.",
+   "vis": {
+    "a": "porta",
+    "fase": "fresta"
+   }
+  },
+  {
+   "i": 10,
+   "ini": 109.44,
+   "dur": 6.3,
+   "a": "frase",
+   "texto": "Hoje, para ler a sua mente, a máquina precisa da sua cooperação.",
+   "vis": {
+    "a": "frase",
+    "texto": "Hoje, ela precisa da sua cooperação.",
+    "mundo": "papel"
+   }
+  },
+  {
+   "i": 11,
+   "ini": 115.74,
+   "dur": 1.27,
+   "a": "frase",
+   "texto": "Hoje.",
+   "vis": {
+    "a": "frase",
+    "texto": "Hoje."
+   }
+  },
+  {
+   "i": 12,
+   "ini": 117.01,
+   "dur": 8.22,
+   "a": "servidores",
+   "texto": "E quando não precisar mais? Quem guarda esses dados? Quem decide o que eles significam?",
+   "vis": {
+    "a": "servidores"
+   }
+  }
+ ],
+ "influenciar": [
+  {
+   "i": 0,
+   "ini": 0.0,
+   "dur": 3.43,
+   "a": "arquivo",
+   "texto": "Arquivo quatro. Influenciar.",
+   "vis": {
+    "a": "arquivo",
+    "n": "4",
+    "nome": "INFLUENCIAR"
+   }
+  },
+  {
+   "i": 1,
+   "ini": 3.43,
+   "dur": 9.14,
+   "a": "frase",
+   "texto": "Até aqui, tudo exigiu um laboratório, um implante ou uma máquina de ressonância. O próximo caso exigiu só um feed.",
+   "vis": {
+    "a": "frase",
+    "texto": "Só um feed."
+   }
+  },
+  {
+   "i": 2,
+   "ini": 12.57,
+   "dur": 16.02,
+   "a": "feeds",
+   "texto": "Janeiro de dois mil e doze. Durante uma semana, o Facebook mudou o que seiscentas e oitenta e nove mil pessoas viam. Para umas, menos publicações felizes. Para outras, menos publicações tristes.",
+   "vis": {
+    "a": "feeds",
+    "r": "caso",
+    "numero": "689.003",
+    "data": "JANEIRO DE 2012"
+   }
+  },
+  {
+   "i": 3,
+   "ini": 28.59,
+   "dur": 2.75,
+   "a": "frase",
+   "texto": "Ninguém foi avisado.",
+   "vis": {
+    "a": "frase",
+    "texto": "Ninguém foi avisado.",
+    "r": "caso"
+   }
+  },
+  {
+   "i": 4,
+   "ini": 31.34,
+   "dur": 13.48,
+   "a": "doc",
+   "texto": "Depois, os pesquisadores mediram o que essas pessoas escreveram. Quem viu menos coisa boa passou a escrever um pouco menos de palavras positivas, e um pouco mais de negativas.",
+   "vis": {
+    "a": "doc",
+    "img": "kramer2014",
+    "revista": "PNAS",
+    "ano": "2014",
+    "titulo": "Experimental evidence of massive-scale emotional contagion through social networks",
+    "autores": "Kramer, Guillory e Hancock",
+    "r": "pesquisa"
+   }
+  },
+  {
+   "i": 5,
+   "ini": 44.82,
+   "dur": 16.6,
+   "a": "termos",
+   "texto": "O efeito foi pequeno. Mas o tamanho nunca foi o problema. O problema é que ninguém perguntou. A justificativa foi a política de uso de dados que todo mundo aceita ao criar a conta. Aquele texto que ninguém lê.",
+   "vis": {
+    "a": "termos",
+    "r": "caso"
+   }
+  },
+  {
+   "i": 6,
+   "ini": 61.42,
+   "dur": 12.39,
+   "a": "doc",
+   "texto": "O estudo saiu em dois mil e catorze. Duas semanas depois, a própria revista publicou uma nota de preocupação sobre o consentimento dos participantes.",
+   "vis": {
+    "a": "doc",
+    "img": "pnas_concern",
+    "revista": "PNAS",
+    "ano": "julho de 2014",
+    "titulo": "Editorial Expression of Concern",
+    "autores": "informed consent · opt out",
+    "r": "caso",
+    "carimbo": "NOTA DE PREOCUPAÇÃO"
+   }
+  },
+  {
+   "i": 7,
+   "ini": 73.81,
+   "dur": 10.95,
+   "a": "escritorio",
+   "texto": "Repare. Nenhum chip. Nenhuma luz no cérebro. Só alguém que controlava o que você via, e media como você reagia.",
+   "vis": {
+    "a": "escritorio",
+    "tela": "feed"
+   }
+  },
+  {
+   "i": 8,
+   "ini": 84.76,
+   "dur": 8.53,
+   "a": "frase",
+   "texto": "Quem controla a tela não precisa entrar na sua cabeça. Ele escolhe o mundo que chega até ela.",
+   "vis": {
+    "a": "frase",
+    "texto": "Ele escolhe o mundo que chega até ela."
+   }
+  }
+ ],
+ "realidade": [
+  {
+   "i": 0,
+   "ini": 0.0,
+   "dur": 6.95,
+   "a": "simulacao",
+   "texto": "E se o controle fosse total? Se alguém escolhesse não só o feed, mas o mundo inteiro?",
+   "vis": {
+    "a": "simulacao",
+    "fase": "mundo"
+   }
+  },
+  {
+   "i": 1,
+   "ini": 6.95,
+   "dur": 17.34,
+   "a": "matrix",
+   "texto": "Em mil novecentos e noventa e nove, o filme Matrix levou essa ideia ao limite. A humanidade vive dentro de uma simulação, controlada por máquinas. Ninguém percebe, porque tudo o que se vê, se toca e se sente é fabricado.",
+   "vis": {
+    "a": "matrix",
+    "r": "ficcao",
+    "fonte": "The Matrix · Warner Bros. · 1999"
+   }
+  },
+  {
+   "i": 2,
+   "ini": 24.29,
+   "dur": 9.81,
+   "a": "doc",
+   "texto": "Parece só cinema. Mas, em dois mil e três, o filósofo Nick Bostrom publicou um argumento que tirou o sono de muita gente.",
+   "vis": {
+    "a": "doc",
+    "img": "bostrom2003",
+    "revista": "Philosophical Quarterly",
+    "ano": "2003",
+    "titulo": "Are You Living in a Computer Simulation?",
+    "autores": "Nick Bostrom",
+    "r": "argumento"
+   }
+  },
+  {
+   "i": 3,
+   "ini": 34.1,
+   "dur": 17.78,
+   "a": "multiplica",
+   "texto": "Ele começa assim. Uma civilização avançada o bastante conseguiria simular mentes inteiras, como a gente viu com a mosca, só que numa escala muito maior. E poderia rodar milhões de simulações dos próprios antepassados.",
+   "vis": {
+    "a": "multiplica",
+    "r": "argumento"
+   }
+  },
+  {
+   "i": 4,
+   "ini": 51.88,
+   "dur": 21.04,
+   "a": "trilema",
+   "texto": "Então, pelo menos uma de três coisas é verdade. Um: quase nenhuma civilização chega a esse ponto. Dois: as que chegam não têm interesse em fazer essas simulações. Três: quase todas as mentes como a sua estão dentro de uma simulação.",
+   "vis": {
+    "a": "trilema",
+    "r": "argumento",
+    "itens": [
+     "Quase nenhuma civilização chega lá.",
+     "As que chegam não fazem simulações.",
+     "Quase todas as mentes como a sua são simuladas."
+    ]
+   }
+  },
+  {
+   "i": 5,
+   "ini": 72.92,
+   "dur": 12.3,
+   "a": "multiplica",
+   "texto": "Se for a terceira, a conta é simples. Haveria muito mais mentes simuladas do que reais. E a chance de você ser uma das reais seria minúscula.",
+   "vis": {
+    "a": "multiplica",
+    "fase": "uma",
+    "r": "argumento"
+   }
+  },
+  {
+   "i": 6,
+   "ini": 85.22,
+   "dur": 7.78,
+   "a": "simulacao",
+   "texto": "Você pode estar dentro de uma simulação agora mesmo. E não teria como perceber.",
+   "vis": {
+    "a": "simulacao",
+    "fase": "revela"
+   }
+  },
+  {
+   "i": 7,
+   "ini": 93.0,
+   "dur": 16.48,
+   "a": "simulacao",
+   "texto": "Mas atenção ao que o argumento não diz. Ele não prova que vivemos numa simulação. Ele depende de uma aposta enorme: a de que um computador consegue produzir consciência. E ninguém sabe se isso é possível.",
+   "vis": {
+    "a": "simulacao",
+    "fase": "mundo",
+    "r": "argumento"
+   }
+  },
+  {
+   "i": 8,
+   "ini": 109.48,
+   "dur": 14.95,
+   "a": "frase",
+   "texto": "O que ele faz é outra coisa. Ele mostra que, se alguém controlar tudo o que você percebe, você não tem como saber. É a mesma pergunta do Facebook, só que do tamanho do universo.",
+   "vis": {
+    "a": "frase",
+    "texto": "A mesma pergunta, do tamanho do universo."
+   }
+  }
+ ],
+ "robo": [
+  {
+   "i": 0,
+   "ini": 0.0,
+   "dur": 3.31,
+   "a": "frase",
+   "texto": "Agora, a história mais estranha deste vídeo.",
+   "vis": {
+    "a": "frase",
+    "texto": "A história mais estranha."
+   }
+  },
+  {
+   "i": 1,
+   "ini": 3.31,
+   "dur": 21.42,
+   "a": "forum",
+   "texto": "Em dois mil e dez, num fórum da internet chamado LessWrong, um usuário chamado Roko publicou um experimento mental. Imagine uma inteligência artificial do futuro, poderosa e decidida a existir. Ela poderia castigar todo mundo que soube que ela era possível e não ajudou a criá-la.",
+   "vis": {
+    "a": "forum",
+    "r": "argumento"
+   }
+  },
+  {
+   "i": 2,
+   "ini": 24.73,
+   "dur": 3.32,
+   "a": "basilisco",
+   "texto": "E você, agora, já sabe.",
+   "vis": {
+    "a": "basilisco"
+   }
+  },
+  {
+   "i": 3,
+   "ini": 28.05,
+   "dur": 10.32,
+   "a": "basilisco",
+   "texto": "Esse é o Basilisco de Roko. Como o monstro da lenda, que mata quem olha para ele, a ideia supostamente faria mal a quem a conhece.",
+   "vis": {
+    "a": "basilisco",
+    "texto": "O Basilisco de Roko",
+    "r": "argumento"
+   }
+  },
+  {
+   "i": 4,
+   "ini": 38.37,
+   "dur": 11.66,
+   "a": "proibido",
+   "texto": "O fundador do fórum apagou o post e proibiu o assunto por cinco anos. O efeito foi o contrário: a proibição espalhou a história pela internet.",
+   "vis": {
+    "a": "proibido",
+    "r": "caso"
+   }
+  },
+  {
+   "i": 5,
+   "ini": 50.03,
+   "dur": 15.56,
+   "a": "basilisco",
+   "texto": "A ideia não se sustenta. Depende de suposições frágeis sobre o que uma máquina futura iria querer, e foi rejeitada até por gente do próprio fórum. Não existe nenhuma evidência dessa ameaça.",
+   "vis": {
+    "a": "basilisco",
+    "r": "argumento"
+   }
+  },
+  {
+   "i": 6,
+   "ini": 65.59,
+   "dur": 9.23,
+   "a": "frase",
+   "texto": "Mas repare no que ela faz. Ela usa o medo de um robô mau para pressionar pessoas reais a agir hoje.",
+   "vis": {
+    "a": "frase",
+    "texto": "O medo como ferramenta."
+   }
+  },
+  {
+   "i": 7,
+   "ini": 74.82,
+   "dur": 18.76,
+   "a": "livro",
+   "texto": "O cientista da computação Giancarlo Guizzardi, que se formou aqui na UFES, tem um livro com um título que resume isso: Quem tem medo do robô mau? A proposta dele é separar o que a inteligência artificial realmente faz do que a gente imagina que ela faça.",
+   "vis": {
+    "a": "livro",
+    "r": "argumento"
+   }
+  },
+  {
+   "i": 8,
+   "ini": 93.58,
+   "dur": 18.05,
+   "a": "pessoas",
+   "texto": "E, quando a gente faz essa separação, a imagem muda. Em nenhum dos casos deste vídeo havia uma máquina malvada. Havia laboratórios, empresas e plataformas. Pessoas que decidiram o que testar, o que mostrar e o que guardar.",
+   "vis": {
+    "a": "pessoas"
+   }
+  },
+  {
+   "i": 9,
+   "ini": 111.63,
+   "dur": 8.48,
+   "a": "frase",
+   "texto": "O robô mau é uma distração. Quem segura a chave tem nome, endereço e modelo de negócio.",
+   "vis": {
+    "a": "frase",
+    "texto": "Quem segura a chave tem nome, endereço e modelo de negócio."
+   }
+  }
+ ],
+ "fechamento": [
+  {
+   "i": 0,
+   "ini": 0.0,
+   "dur": 2.6,
+   "a": "fechadura",
+   "texto": "Então, quem tem a chave?",
+   "vis": {
+    "a": "fechadura",
+    "fase": "uma"
+   }
+  },
+  {
+   "i": 1,
+   "ini": 2.6,
+   "dur": 17.26,
+   "a": "fechadura",
+   "texto": "Escrever uma memória. Mapear um cérebro. Ler o que ele pensa. Escolher o que ele vê. Em todos os casos, a tecnologia chegou antes da pergunta. Primeiro alguém consegue. Depois alguém pergunta se podia.",
+   "vis": {
+    "a": "fechadura",
+    "fase": "quatro"
+   }
+  },
+  {
+   "i": 2,
+   "ini": 19.86,
+   "dur": 15.68,
+   "a": "direitos",
+   "texto": "Por isso, alguns pesquisadores defendem direitos novos para esta época: privacidade mental, liberdade cognitiva, integridade da mente. O direito de ninguém entrar na sua cabeça sem você saber.",
+   "vis": {
+    "a": "direitos",
+    "r": "argumento",
+    "fonte": "Ienca e Andorno · 2017"
+   }
+  },
+  {
+   "i": 3,
+   "ini": 35.54,
+   "dur": 18.47,
+   "a": "lista",
+   "texto": "Nós defendemos o mesmo. Consentimento que dê para entender, e não um termo que ninguém lê. Limites para o uso de dados do cérebro. Fiscalização independente. E o direito de dizer não, sem perder o emprego por isso.",
+   "vis": {
+    "a": "lista",
+    "itens": [
+     "Consentimento que dá para entender",
+     "Limites para dados do cérebro",
+     "Fiscalização independente",
+     "Direito de dizer não"
+    ],
+    "r": "argumento"
+   }
+  },
+  {
+   "i": 4,
+   "ini": 54.01,
+   "dur": 2.62,
+   "a": "onda",
+   "texto": "Agora, uma última coisa.",
+   "vis": {
+    "a": "onda"
+   }
+  },
+  {
+   "i": 5,
+   "ini": 56.63,
+   "dur": 12.54,
+   "a": "onda",
+   "texto": "A voz que contou essa história não existe. Ela foi gerada por inteligência artificial. Você ouviu essa voz por quinze minutos e, provavelmente, confiou nela.",
+   "vis": {
+    "a": "onda",
+    "texto": "Esta voz foi gerada por inteligência artificial."
+   }
+  },
+  {
+   "i": 6,
+   "ini": 69.17,
+   "dur": 7.41,
+   "a": "onda",
+   "texto": "Então não confie. Confira as fontes. Estão todas na descrição.",
+   "vis": {
+    "a": "onda",
+    "texto": "Confira as fontes."
+   }
+  },
+  {
+   "i": 7,
+   "ini": 76.58,
+   "dur": 9.72,
+   "a": "camundongo",
+   "texto": "Lembra do camundongo? Ele nunca soube que aquela lembrança tinha sido escrita por outra pessoa. Ele só sentia medo.",
+   "vis": {
+    "a": "camundongo",
+    "estado": "vazia"
+   }
+  },
+  {
+   "i": 8,
+   "ini": 86.3,
+   "dur": 10.36,
+   "a": "frase",
+   "texto": "No caso dele, é fácil dizer quem tinha a chave. Os cientistas. No seu caso, a pergunta ainda está aberta.",
+   "vis": {
+    "a": "frase",
+    "texto": "No seu caso, ainda está aberta."
+   }
+  },
+  {
+   "i": 9,
+   "ini": 96.66,
+   "dur": 5.38,
+   "a": "porta",
+   "texto": "Quem está do outro lado da porta?",
+   "vis": {
+    "a": "porta",
+    "fase": "fecha",
+    "texto": "Quem está do outro lado da porta?"
+   }
+  },
+  {
+   "i": 10,
+   "ini": 102.04,
+   "dur": 15.13,
+   "a": "basilisco",
+   "texto": "Você deve ter percebido as falhas na minha voz. Mas será que isso é um problema do meu modelo... ou a sua simulação está falhando?"
+  }
+ ]
+}

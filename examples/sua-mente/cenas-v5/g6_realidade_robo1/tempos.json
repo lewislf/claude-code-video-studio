@@ -1,0 +1,25 @@
+{
+ "inicio": {
+  "realidade_2": 0.0,
+  "realidade_4": 10.31,
+  "realidade_7": 31.85,
+  "realidade_8": 48.83,
+  "robo_0": 64.28,
+  "robo_1": 68.09,
+  "robo_2": 90.01,
+  "robo_3": 93.83,
+  "robo_4": 104.65
+ },
+ "dur": {
+  "realidade_2": 9.81,
+  "realidade_4": 21.04,
+  "realidade_7": 16.48,
+  "realidade_8": 14.95,
+  "robo_0": 3.31,
+  "robo_1": 21.42,
+  "robo_2": 3.32,
+  "robo_3": 10.32,
+  "robo_4": 11.66
+ },
+ "total": 116.31
+}

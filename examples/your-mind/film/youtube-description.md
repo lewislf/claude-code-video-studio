@@ -1,6 +1,6 @@
 # Title
 
-The contract you never signed
+Who holds the key to your mind?
 
 # Description
 

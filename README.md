@@ -6,7 +6,7 @@ Pipeline to make a narrated explainer video entirely on your machine, with Claud
 animated scenes, assembly, sped-up version and cover. No paid API. Voice on OmniVoice, music on MusicGen, scenes in
 HTML/SVG/GSAP rendered by [HyperFrames](https://github.com/heygen-com/hyperframes), cover on SDXL via ComfyUI.
 
-[<img src="media/player.gif" width="720" alt="Watch: The contract you never signed (13:15)">](https://github.com/lewislf/claude-code-video-studio/releases/download/your-mind/your-mind-en-1080p.mp4)
+[<img src="media/player.gif" width="720" alt="Watch: Who holds the key to your mind? (13:15)">](https://github.com/lewislf/claude-code-video-studio/releases/download/your-mind/your-mind-en-1080p.mp4)
 
 Made with this: *Your mind under terms of use*, 13 minutes on neurotechnology (assignment for Computers and Society,
 UFES). It was made in Brazilian Portuguese and then dubbed into English with this pipeline. Full code in

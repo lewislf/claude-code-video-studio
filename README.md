@@ -6,12 +6,15 @@ Pipeline to make a narrated explainer video entirely on your machine, with Claud
 animated scenes, assembly, sped-up version and cover. No paid API. Voice on OmniVoice, music on MusicGen, scenes in
 HTML/SVG/GSAP rendered by [HyperFrames](https://github.com/heygen-com/hyperframes), cover on SDXL via ComfyUI.
 
-[<img src="media/player.gif" width="720" alt="Watch: The contract you never signed (13:15, in Brazilian Portuguese)">](https://github.com/lewislf/claude-code-video-studio/releases/download/sua-mente/sua-mente-1080p.mp4)
+[<img src="media/player.gif" width="720" alt="Watch: The contract you never signed (13:15)">](https://github.com/lewislf/claude-code-video-studio/releases/download/your-mind/your-mind-en-1080p.mp4)
 
-Made with this: *Sua mente em termos de uso* ("Your mind under terms of use"), 13 minutes on neurotechnology, in Brazilian
-Portuguese (assignment for Computers and Society, UFES). Full code in [`examples/sua-mente/`](examples/sua-mente/).
+Made with this: *Your mind under terms of use*, 13 minutes on neurotechnology (assignment for Computers and Society,
+UFES). It was made in Brazilian Portuguese and then dubbed into English with this pipeline. Full code in
+[`examples/your-mind/`](examples/your-mind/).
 
-Click the player to watch in 1080p (552 MB), or the [light 27 MB copy](https://github.com/lewislf/claude-code-video-studio/releases/download/sua-mente/sua-mente-celular.mp4). Description and chapters in the [release](https://github.com/lewislf/claude-code-video-studio/releases/tag/sua-mente).
+Click the player to watch in 1080p (665 MB), or the [light 26 MB copy](https://github.com/lewislf/claude-code-video-studio/releases/download/your-mind/your-mind-en-phone.mp4). Description
+and chapters in the [release](https://github.com/lewislf/claude-code-video-studio/releases/tag/your-mind); the
+[original Portuguese cut](https://github.com/lewislf/claude-code-video-studio/releases/tag/sua-mente) has its own.
 
 ## How it works
 
@@ -40,8 +43,10 @@ music.py ──> assets/music.mp3 ──> assemble.py <── assets/clips/*.mp4
 ```
 
 The narration language is `LANG` in `script.py` (ISO code, default `"en"`). Any language OmniVoice supports works; the example
-video is pt-BR. The bundled reference voice (`studio/voices/deep_narrator.wav`) is a Portuguese sample; `LANG` sets the language
-of the generated speech, and you can point `VOICE` at your own reference clip.
+video is pt-BR. The voice is cloned from a reference clip, and the clip's accent carries over, so the reference has to be in
+the narration's language. `studio/voices/` has eight English references made with OmniVoice voice design (deep male US and UK,
+older male US, low female US, two takes each) and one Portuguese (`deep_narrator`). Without `VOICE`, English uses
+`en_deep_us_b` and other languages use `deep_narrator`; set `VOICE = "en_deep_uk_a"` to pick another, or point it at your own clip.
 
 ## Start a video
 
@@ -66,7 +71,7 @@ makes the thumbnail.
 | `studio/` | the pipeline (voice, words, music, scenes, assembly, patching, delivery) and the scene engine |
 | `template/` | minimal 20 s project to copy |
 | `skills/` | `narrated-video` and `ai-cover` for Claude Code |
-| `examples/sua-mente/` | the UFES video as it was made: 72 scenes, script, briefings. Does not run without the assets (voice, article pages, trailers), which were left out of the repo |
+| `examples/your-mind/` | the UFES video in English: 72 scenes, script, dub, briefings. Rendering needs the assets (voice, article pages, trailers), which were left out of the repo |
 
 ## Requirements
 
@@ -82,6 +87,6 @@ Made by [lewislf](https://github.com/lewislf) and [FeLiPeOLi7](https://github.co
 
 ## License
 
-Code under [MIT](LICENSE). The film and trailer clips cited in `examples/sua-mente/video-v2/assets/CREDITOS.md`
+Code under [MIT](LICENSE). The film and trailer clips cited in `examples/your-mind/film/assets/CREDITS.md`
 belong to their owners and are not in the repo. The fly photo
-`examples/sua-mente/cenas-v5/g3_escrever_mapear/assets/mosca.jpg` is by Alexis (iNaturalist), CC BY 4.0. The first page of Ryan et al. 2015, embedded in one scene of the example, is credited in `examples/sua-mente/README.md`.
+`examples/your-mind/scenes/g3_writing_mapping/assets/fly.jpg` is by Alexis (iNaturalist), CC BY 4.0.

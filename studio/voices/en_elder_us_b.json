@@ -1,0 +1,11 @@
+{
+  "name": "en_elder_us_b",
+  "use": "older male narrator, american, en",
+  "model": "k2-fsa/OmniVoice",
+  "language": "en",
+  "instruct": "male, low pitch, elderly, american accent",
+  "speed": 0.9,
+  "seed": 101,
+  "ref_txt": "In two thousand thirteen, in a lab at MIT, a mouse walked into a box where nothing had ever happened to it. And it froze in fear. Someone wrote that memory into it. With light.",
+  "note": "made by voice design (instruct, no reference). Use the .wav as the clone reference with ref_txt, so every line keeps this timbre."
+}

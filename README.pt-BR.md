@@ -6,10 +6,10 @@ Pipeline pra fazer vídeo explicativo narrado inteiro na sua máquina, com o Cla
 cenas animadas, montagem, versão acelerada e capa. Nenhuma API paga. Voz no OmniVoice, música no MusicGen, cenas em
 HTML/SVG/GSAP renderizadas pelo [HyperFrames](https://github.com/heygen-com/hyperframes), capa no SDXL via ComfyUI.
 
-[<img src="media/player.gif" width="720" alt="Assistir: O contrato que você nunca assinou (13:15)">](https://github.com/lewislf/claude-code-video-studio/releases/download/sua-mente/sua-mente-1080p.mp4)
+[<img src="media/player-pt-BR.gif" width="720" alt="Assistir: O contrato que você nunca assinou (13:15)">](https://github.com/lewislf/claude-code-video-studio/releases/download/sua-mente/sua-mente-1080p.mp4)
 
 Feito com isto: *Sua mente em termos de uso*, 13 minutos sobre neurotecnologia, em português (trabalho de Computação e
-Sociedade, UFES). Código completo em [`examples/sua-mente/`](examples/sua-mente/).
+Sociedade, UFES). O código completo, já da versão dublada em inglês, está em [`examples/your-mind/`](examples/your-mind/).
 
 Clique no player pra assistir em 1080p (552 MB), ou a [cópia leve de 27 MB](https://github.com/lewislf/claude-code-video-studio/releases/download/sua-mente/sua-mente-celular.mp4). Descrição e capítulos na [release](https://github.com/lewislf/claude-code-video-studio/releases/tag/sua-mente).
 
@@ -40,8 +40,11 @@ music.py ──> assets/music.mp3 ──> assemble.py <── assets/clips/*.mp4
 ```
 
 O idioma da narração é o `LANG` do `script.py` (código ISO, padrão `"en"`). Funciona qualquer idioma que o OmniVoice suporte;
-o vídeo de exemplo é em pt-BR. A voz de referência que vem no repo (`studio/voices/deep_narrator.wav`) é uma
-amostra em português; o `LANG` define o idioma da fala gerada, e dá pra apontar o `VOICE` pra um clipe de referência seu.
+o vídeo de exemplo é em pt-BR. A voz é clonada de um clipe de referência e o sotaque do clipe vem junto, então a referência
+tem que estar no idioma da narração. Em `studio/voices/` há oito referências em inglês feitas com o voice design do OmniVoice
+(masculina grave americana e britânica, masculina mais velha americana, feminina grave americana, duas versões de cada) e uma
+em português (`deep_narrator`). Sem `VOICE`, inglês usa `en_deep_us_b` e os outros idiomas usam `deep_narrator`; `VOICE = "en_deep_uk_a"`
+escolhe outra, ou aponte pra um clipe seu.
 
 ## Começar um vídeo
 
@@ -66,7 +69,7 @@ gera a thumbnail.
 | `studio/` | o pipeline (voz, palavras, música, cenas, montagem, remendo, entrega) e o motor das cenas |
 | `template/` | projeto mínimo de 20 s pra copiar |
 | `skills/` | `narrated-video` e `ai-cover` pro Claude Code |
-| `examples/sua-mente/` | o vídeo da UFES como foi feito: 72 cenas, roteiro, briefings. Não roda sem os assets (voz, páginas de artigo, trailers), que ficaram fora do repo |
+| `examples/your-mind/` | o vídeo da UFES em inglês: 72 cenas, roteiro, dublagem, briefings. O render precisa dos assets (voz, páginas de artigo, trailers), que ficaram fora do repo |
 
 ## Requisitos
 
@@ -82,6 +85,6 @@ Feito por [lewislf](https://github.com/lewislf) e [FeLiPeOLi7](https://github.co
 
 ## Licença
 
-Código sob [MIT](LICENSE). Os trechos de filmes e trailers citados em `examples/sua-mente/video-v2/assets/CREDITOS.md`
+Código sob [MIT](LICENSE). Os trechos de filmes e trailers citados em `examples/your-mind/film/assets/CREDITS.md`
 pertencem aos seus donos e não estão no repo. A foto da mosca
-`examples/sua-mente/cenas-v5/g3_escrever_mapear/assets/mosca.jpg` é de Alexis (iNaturalist), CC BY 4.0. A primeira página de Ryan et al. 2015, embutida numa cena do exemplo, tem o crédito em `examples/sua-mente/README.md`.
+`examples/your-mind/scenes/g3_writing_mapping/assets/fly.jpg` é de Alexis (iNaturalist), CC BY 4.0.

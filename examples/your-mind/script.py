@@ -1,0 +1,127 @@
+"""English dub of the Brazilian Portuguese original.
+
+Same scenes and the same segments, in the same order: segment i of each scene is placed where the pt-BR segment i
+started (dub.py). Pauses only matter for tts.py pick; the placement uses the pt-BR durations.
+Visuals are empty except on the 3 fiction trailer segments, which trailers.py renders.
+"""
+LANG = "en"
+VOICE = "en_deep_us_b"  # native English reference (studio/voices); the pt-BR sample gave a Portuguese accent
+PRONUNCIATION = {"MIT": "M.I.T.", "UFES": "oo-fess", "Guizzardi": "Gwitsardi", "Tonegawa": "Toneh-gawa"}
+
+P, G = 1.4, 0.5
+
+SCENES = [
+  ("opening", "Opening", [
+    ("In two thousand thirteen, in a lab at MIT, in the United States, a mouse walked into a box where nothing had ever happened to it.", G, {}),
+    ("And it froze in fear.", G, {}),
+    ("It remembered getting a shock there. But that shock never happened in that box.", P, {}),
+    ("Someone wrote that memory into it. With light.", P, {}),
+    ("This video is about one question. Who has the power to get inside your mind? To lock away a memory, write a new one, read what you think, or decide what reality you get to see?", G, {}),
+    ("Fiction has imagined all of it. A company that splits your memory in two. Machines that build the world you see. An artificial intelligence that punishes anyone who doesn't obey.", G, {"visual": "fiction_trio", "label": "fiction"}),
+    ("Science, so far, has only done pieces. But they are real pieces.", G, {}),
+    ("Over the next few minutes, we'll open these files one by one. Separate what has already happened from what is still just fear. And reach an uncomfortable conclusion: the danger may not be the evil robot.", G, {}),
+    ("Hold on to one question. Who has the key?", P, {}),
+  ]),
+  ("contract", "The contract", [
+    ("Imagine a job offer with a strange perk. When you leave the office, you forget everything that happened inside. The pressure stays at work. The conflicts don't follow you home.", G, {}),
+    ("That's the premise of the series Severance. Lumon employees undergo surgery that splits their memory in two. Inside, they don't know who they are outside. Outside, they don't know what they do inside.", G, {"visual": "severance", "label": "fiction"}),
+    ("Sounds like a relief. But read the contract carefully.", G, {}),
+    ("The one who signed was the outside person. The one who works, suffers and obeys is the inside one. And the inside one never agreed to anything. She was born employed.", G, {}),
+    ("It's the problem of consent taken to the extreme. How can someone accept a condition they will never be able to remember? And if saying no cost you your job, would that choice be free?", P, {}),
+    ("Severance is fiction. Nobody knows how to split a memory like that. But the idea that a memory can be locked away, and that someone can hold the key, is not as fictional as it seems.", G, {}),
+  ]),
+  ("locked", "Locked memory", [
+    ("Start with the simplest case. Have you ever walked into a room and forgotten what you came to do?", G, {}),
+    ("Researchers call it the doorway effect. In two thousand six, a study showed that walking through a door can disrupt your memory of what you just did.", G, {}),
+    ("One explanation is that the brain organizes life into episodes, and the door marks the end of one. The effect is small and doesn't always show up. But it shows one thing: remembering means opening a path. And the path can fail.", G, {}),
+    ("With trauma, this gets serious. Someone who goes through violence may not be able to remember what happened. And yet, the body reacts. A smell, a sound, a place, and the fear comes back whole, without warning.", P, {}),
+    ("In two thousand fifteen, the same MIT team tested this in mice with amnesia. The memories seemed lost. But when the scientists lit up the right neurons with light, the memory came back.", G, {}),
+    ("It hadn't been erased. It was just out of reach.", P, {}),
+    ("And there are already attempts to work that door in people. In some studies, patients with post-traumatic stress took a common blood pressure drug, propranolol, before recalling the trauma. The idea is to lower the emotional weight of the memory.", G, {}),
+    ("A two thousand eighteen study had a positive result. Another, from two thousand fifteen, failed to replicate an earlier finding. Science is still debating it.", G, {}),
+    ("For those who suffer, this could be liberation. But a question remains. Who decides which memory hurts too much? The patient? The doctor? The employer? The State?", P, {}),
+  ]),
+  ("writing", "File 1 · Write", [
+    ("File one. Write.", G, {}),
+    ("Go back to the mouse from the start. Every time you live through something, a group of neurons lights up together. Scientists call that group an engram. It is the physical place of a memory.", G, {}),
+    ("The team of Susumu Tonegawa, a Nobel laureate, tagged the neurons that lit up when the mouse explored a calm box. Those neurons were modified to respond to light.", G, {}),
+    ("Then they took the animal to a different box. There, it got a shock. And at the exact moment of the shock, the scientists switched on the memory of the first box.", G, {}),
+    ("The brain linked the two. Back in the calm box, the mouse froze. It was afraid of a place where nothing had happened.", G, {}),
+    ("According to the researchers, the brain uses the same mechanism to recall a false memory and a true one. From the inside, you can't tell the difference.", P, {}),
+    ("This is a genetically modified mouse, with a light fiber implanted in its brain. No one has done this to a person, and today there is no way to do it.", G, {}),
+    ("But the experiment proves something frightening. Memory is not a sealed file. It can be edited from the outside. And if a memory can be written by someone else, how do you trust your own?", P, {}),
+  ]),
+  ("mapping", "File 2 · Map", [
+    ("File two. Map.", G, {}),
+    ("To write into a mind, you first need to know where everything is. So scientists started with a small brain. A fly's.", G, {}),
+    ("The fruit fly has a brain smaller than a poppy seed. In two thousand twenty-four, the FlyWire project published its complete map: one hundred thirty-nine thousand neurons, and about fifty million connections.", G, {}),
+    ("The brain was sliced into ultra-thin layers and photographed under an electron microscope. An artificial intelligence traced every neuron. And hundreds of researchers and volunteers fixed the mistakes, like in a game.", G, {}),
+    ("It took thirty-three years of human work, all added up. Without artificial intelligence, according to one of the project's leaders, it would have taken almost fifty thousand.", G, {}),
+    ("Then came the next step. Another team took that map and got it running on a computer. A fly brain, simulated.", G, {}),
+    ("When they activated, in the simulation, the neurons that sense sugar, the model predicted which neurons would make the fly start eating. Then they tested it on real flies. And several predictions held up.", G, {}),
+    ("Think about what that means. A brain became a map. And the map, running on a computer, started behaving like a brain.", P, {}),
+    ("It's a fly, and the model is very simplified. Mapping connections is not copying a consciousness. But keep that image in mind: a brain running inside a computer. It will come back.", G, {}),
+  ]),
+  ("reading", "File 3 · Read", [
+    ("File three. Read.", G, {}),
+    ("Mapping a fly's brain is one thing. Reading a living human brain is another.", G, {}),
+    ("Two thousand six, United Kingdom. A twenty-three-year-old woman is in a car accident. Five months later, she sleeps and wakes, but doesn't respond to anything. The diagnosis is vegetative state.", G, {}),
+    ("Neuroscientist Adrian Owen puts her in a brain scanner and asks: imagine you are playing tennis.", G, {}),
+    ("Her brain responds. The same way a healthy person's does. She was listening. Trapped inside her own body, with no way to tell anyone.", P, {}),
+    ("It was challenged, and the debate went on for years. In two thousand twenty-four, a study of two hundred forty-one unresponsive patients found signs of consciousness in one out of four.", G, {}),
+    ("For these people, the only door out of their own heads was a machine.", P, {}),
+    ("And machines like that are already giving autonomy back. In two thousand twenty-four, Neuralink showed a participant with paralysis moving a cursor using only brain signals, through an implant.", G, {}),
+    ("Without surgery, a team at the University of Texas used brain scans and a language model to reconstruct the gist of stories volunteers were hearing or imagining.", G, {}),
+    ("It wasn't word for word. Each volunteer trained the system for about sixteen hours. And when they resisted by thinking about something else, the system failed.", G, {}),
+    ("Today, to read your mind, the machine needs your cooperation.", P, {}),
+    ("Today.", G, {}),
+    ("And when it no longer does? Who keeps that data? Who decides what it means?", P, {}),
+  ]),
+  ("influence", "File 4 · Influence", [
+    ("File four. Influence.", G, {}),
+    ("So far, everything required a lab, an implant or a brain scanner. The next case required only a feed.", G, {}),
+    ("January, two thousand twelve. For one week, Facebook changed what six hundred eighty-nine thousand people saw. Some got fewer happy posts. Others got fewer sad ones.", G, {}),
+    ("Nobody was told.", G, {}),
+    ("Then the researchers measured what those people wrote. Those who saw fewer good things started writing slightly fewer positive words, and slightly more negative ones.", G, {}),
+    ("The effect was small. But size was never the problem. The problem is that no one asked. The justification was the data use policy everyone accepts when they sign up. That text nobody reads.", G, {}),
+    ("The study came out in two thousand fourteen. Two weeks later, the journal itself published an expression of concern about the participants' consent.", P, {}),
+    ("Notice. No chip. No light in the brain. Just someone who controlled what you saw, and measured how you reacted.", G, {}),
+    ("Whoever controls the screen doesn't need to get inside your head. They choose the world that reaches it.", P, {}),
+  ]),
+  ("reality", "Reality", [
+    ("What if the control were total? What if someone chose not just the feed, but the whole world?", G, {}),
+    ("In nineteen ninety-nine, the film The Matrix took that idea to the limit. Humanity lives inside a simulation, controlled by machines. No one notices, because everything they see, touch and feel is fabricated.", G, {"visual": "matrix", "label": "fiction"}),
+    ("Sounds like just a movie. But in two thousand three, the philosopher Nick Bostrom published an argument that kept a lot of people up at night.", G, {}),
+    ("It goes like this. A civilization advanced enough could simulate entire minds, like we saw with the fly, only at a much larger scale. And it could run millions of simulations of its own ancestors.", G, {}),
+    ("So at least one of three things is true. One: almost no civilization ever gets that far. Two: those that do have no interest in running these simulations. Three: almost all minds like yours are inside a simulation.", G, {}),
+    ("If it's the third, the math is simple. There would be far more simulated minds than real ones. And the chance of you being one of the real ones would be tiny.", P, {}),
+    ("You could be inside a simulation right now. And you would have no way of telling.", P, {}),
+    ("But pay attention to what the argument doesn't say. It doesn't prove we live in a simulation. It rests on a huge bet: that a computer can produce consciousness. And no one knows if that is possible.", G, {}),
+    ("What it does is something else. It shows that if someone controls everything you perceive, you have no way of knowing. It's the same question as Facebook, only the size of the universe.", P, {}),
+  ]),
+  ("robot", "The evil robot", [
+    ("Now, the strangest story in this video.", G, {}),
+    ("In twenty ten, on an internet forum called LessWrong, a user named Roko posted a thought experiment. Imagine an artificial intelligence from the future, powerful and determined to exist. It could punish everyone who knew it was possible and didn't help create it.", G, {}),
+    ("And you, now, already know.", P, {}),
+    ("This is Roko's Basilisk. Like the monster of legend, which kills anyone who looks at it, the idea would supposedly harm anyone who learns about it.", G, {}),
+    ("The forum's founder deleted the post and banned the topic for five years. It backfired: the ban spread the story across the internet.", G, {}),
+    ("The idea doesn't hold up. It depends on shaky assumptions about what a future machine would want, and it was rejected even by people on the forum itself. There is no evidence for this threat.", G, {}),
+    ("But notice what it does. It uses the fear of an evil robot to pressure real people into acting today.", P, {}),
+    ("Computer scientist Giancarlo Guizzardi, who graduated here at UFES, has a book whose title sums it up: Who's afraid of the evil robot? His proposal is to separate what artificial intelligence actually does from what we imagine it does.", G, {}),
+    ("And when we make that separation, the picture changes. In none of the cases in this video was there an evil machine. There were labs, companies and platforms. People who decided what to test, what to show and what to keep.", G, {}),
+    ("The evil robot is a distraction. Whoever holds the key has a name, an address and a business model.", P, {}),
+  ]),
+  ("closing", "Closing", [
+    ("So, who has the key?", G, {}),
+    ("Writing a memory. Mapping a brain. Reading what it thinks. Choosing what it sees. In every case, the technology arrived before the question. First someone manages to do it. Then someone asks whether they should have.", G, {}),
+    ("That's why some researchers argue for new rights for this era: mental privacy, cognitive liberty, integrity of the mind. The right that no one gets inside your head without you knowing.", G, {}),
+    ("We argue for the same. Consent you can actually understand, not terms nobody reads. Limits on the use of brain data. Independent oversight. And the right to say no, without losing your job over it.", P, {}),
+    ("Now, one last thing.", G, {}),
+    ("The voice that told this story doesn't exist. It was generated by artificial intelligence. You've been hearing this voice the whole time and, most likely, you trusted it.", G, {}),
+    ("So don't trust it. Check the sources. They're all in the description.", P, {}),
+    ("Remember the mouse? It never knew that memory had been written by someone else. It only felt fear.", G, {}),
+    ("In its case, it's easy to say who had the key. The scientists. In your case, the question is still open.", P, {}),
+    ("Who is on the other side of the door?", 3.0, {}),
+    ("You must have noticed the glitches in my voice. But is that a problem with my model, or is your simulation failing?", 2.0, {}),
+  ]),
+]

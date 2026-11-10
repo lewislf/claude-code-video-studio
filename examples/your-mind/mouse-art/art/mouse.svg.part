@@ -1,0 +1,44 @@
+<defs>
+  <path id="rCorpo" d="M -128 -8 C -140 -88 -78 -150 -6 -154 C 62 -158 118 -126 138 -84 C 150 -58 150 -26 132 -10 C 120 2 100 2 86 2 L -104 2 C -120 2 -127 -1 -128 -8 Z"/>
+  <path id="rCabeca" d="M 62 -112 C 70 -160 126 -176 168 -150 C 190 -136 208 -112 226 -98 C 242 -88 246 -70 232 -60 C 216 -48 188 -42 160 -40 C 108 -36 56 -62 62 -112 Z"/>
+  <radialGradient id="gBody" cx="35%" cy="25%" r="85%"><stop offset="0" stop-color="#fbf6ff"/><stop offset=".6" stop-color="#ece1fb"/><stop offset="1" stop-color="#cdbbee"/></radialGradient>
+  <radialGradient id="gHead" cx="40%" cy="25%" r="85%"><stop offset="0" stop-color="#fffaff"/><stop offset=".65" stop-color="#f0e6fc"/><stop offset="1" stop-color="#d6c6f2"/></radialGradient>
+  <clipPath id="cpEye"><ellipse cx="170" cy="-100" rx="17" ry="20"/></clipPath>
+</defs>
+<g id="rSombra"><ellipse cx="10" cy="6" rx="150" ry="17" fill="#07041c" opacity=".5"/></g>
+<g id="rCauda">
+  <path id="rCaudaP" d="M -120 -40 C -168 -36 -190 -84 -228 -70 C -258 -60 -262 -22 -240 -12" fill="none" stroke="#ff8fc4" stroke-width="11" stroke-linecap="round"/>
+  <path d="M -120 -40 C -168 -36 -190 -84 -228 -70 C -258 -60 -262 -22 -240 -12" fill="none" stroke="#ffc2de" stroke-width="3.5" stroke-linecap="round" transform="translate(0 -3)"/>
+</g>
+<g id="rPernaTras"><ellipse cx="-70" cy="-4" rx="34" ry="14" fill="#c7b2e8"/><ellipse cx="-52" cy="-2" rx="16" ry="8" fill="#ff9bc8"/></g>
+<g id="rPernaFrenteLonge"><ellipse cx="86" cy="-3" rx="22" ry="11" fill="#c0aae4"/><ellipse cx="98" cy="-2" rx="11" ry="6" fill="#ff9bc8"/></g>
+<g id="rCorpoG">
+  <use href="#rCorpo" fill="#ff3b6b" opacity=".9" transform="translate(4 3)"/>
+  <use href="#rCorpo" fill="#35e6a6" opacity=".9" transform="translate(-4 -3)"/>
+  <use href="#rCorpo" fill="url(#gBody)"/>
+  <path d="M -118 -6 C -112 -40 -40 -48 40 -44 C 100 -42 128 -30 134 -14 C 130 0 100 2 86 2 L -104 2 C -116 2 -119 -2 -118 -6 Z" fill="#fff9ff" opacity=".85"/>
+  <path d="M -126 -20 C -132 -86 -76 -144 -8 -150 C 20 -153 42 -150 60 -144 C -10 -120 -80 -90 -126 -20 Z" fill="#fff" opacity=".55"/>
+</g>
+<g id="rPernaTrasPerto"><ellipse cx="-92" cy="-6" rx="40" ry="17" fill="#ddd0f3"/><ellipse cx="-70" cy="-3" rx="19" ry="9" fill="#ff9bc8"/></g>
+<g id="rPernaFrentePerto"><ellipse cx="62" cy="-5" rx="26" ry="13" fill="#e2d6f5"/><ellipse cx="76" cy="-3" rx="13" ry="7" fill="#ff9bc8"/></g>
+<g id="rCabecaPiv">
+<g id="rCabeca2">
+  <g id="rOrelhaLonge"><circle cx="150" cy="-170" r="29" fill="#bda6e6"/><circle cx="152" cy="-168" r="17" fill="#e46aa6"/></g>
+  <use href="#rCabeca" fill="#ff3b6b" opacity=".9" transform="translate(4 3)"/>
+  <use href="#rCabeca" fill="#35e6a6" opacity=".9" transform="translate(-4 -3)"/>
+  <use href="#rCabeca" fill="url(#gHead)"/>
+  <g id="rOrelhaPerto"><circle cx="102" cy="-168" r="36" fill="#ff9bd0"/><circle cx="104" cy="-166" r="22" fill="#e9569a"/><circle cx="98" cy="-176" r="9" fill="#fff" opacity=".35"/></g>
+  <circle cx="148" cy="-72" r="15" fill="#ff9bd0" opacity=".55"/>
+  <g id="rOlho">
+    <ellipse id="rEsclera" cx="170" cy="-100" rx="17" ry="20" fill="#fff" opacity="1"/>
+    <g id="rPupilaG"><ellipse id="rPupila" cx="174" cy="-99" rx="12" ry="15" fill="#1a0f3a"/>
+      <circle cx="179" cy="-106" r="5" fill="#fff"/><circle cx="168" cy="-92" r="2.6" fill="#fff" opacity=".8"/></g>
+    <g clip-path="url(#cpEye)"><ellipse id="rEyelid" cx="170" cy="-100" rx="22" ry="24" fill="#f0e6fc" transform="translate(0 -52)"/></g>
+  </g>
+  <ellipse cx="238" cy="-78" rx="11" ry="9" fill="#ff5fa6"/><ellipse cx="241" cy="-81" rx="4" ry="2.5" fill="#ffd0e6"/>
+  <path d="M 228 -62 C 218 -54 200 -54 190 -60" fill="none" stroke="#b78bd0" stroke-width="3.5" stroke-linecap="round"/>
+  <g stroke="#d8ccf5" stroke-width="3" stroke-linecap="round" id="rBigodes">
+    <path d="M 214 -80 L 278 -98"/><path d="M 216 -72 L 284 -74"/><path d="M 214 -64 L 276 -50"/>
+  </g>
+</g>
+</g>

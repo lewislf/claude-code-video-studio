@@ -9,7 +9,7 @@ project has a `DIRECTION.md` (style, what the user rejected), it overrides this 
 Read before writing code:
 1. `studio/GOTCHAS.md` (transform, id and memory traps; every one of them already cost rework)
 2. `studio/engine.py` (`seg`, `word`, `camZ`, `pop`, `rise`, `countUp`, `text`, `label`, `composition`, `write_scenes`)
-3. `template/scenes/g1/build_g1.py` (the minimal build) and, for finish, the scenes in `examples/sua-mente/cenas-v5/g*/`
+3. `template/scenes/g1/build_g1.py` (the minimal build) and, for finish, the scenes in `examples/your-mind/scenes/g*/`
 4. the project's `script.py` (text and visual of each segment) and `words/<scene>.json` (time per word)
 
 Hard rules:

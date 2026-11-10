@@ -6,8 +6,9 @@
 
 Run the two steps in separate processes (each fits in 4 GB). Needs the OmniVoice venv.
 Language: script.LANG (ISO code, default "en"), used by OmniVoice and by the whisper check.
-Voice: script.VOICE = {"ref": wav, "ref_txt": exact transcript of the wav, "speed": 0.85}.
-Without VOICE, uses the deep narrator in studio/voices/ (a Portuguese sample; its ref_txt stays Portuguese).
+Voice: script.VOICE = a name from studio/voices/ ("en_deep_uk_a") or {"ref": wav, "ref_txt": exact transcript, "speed": 0.9}.
+Without VOICE: en_deep_us_b for English, deep_narrator (a Portuguese sample) otherwise. Use a reference in the same language
+as the narration: cloning a Portuguese sample into English keeps the Portuguese accent.
 """
 import difflib, json, os, re, sys
 import numpy as np, soundfile as sf
@@ -17,11 +18,17 @@ from common import script, taskline
 S = script()
 HERE = os.path.dirname(os.path.abspath(__file__))
 LANG = getattr(S, "LANG", "en")
-VOICE = {"ref": os.path.join(HERE, "voices/deep_narrator.wav"),
-         "ref_txt": ("Era uma noite comum, até que o telefone tocou. Do outro lado, ninguém falava. "
-                     "Só havia uma respiração... lenta, pesada. A polícia nunca explicou o que aconteceu naquela casa. "
-                     "Mas os arquivos revelam algo que ninguém queria que você soubesse."),
-         "speed": 0.85} | getattr(S, "VOICE", {})
+
+
+def voice(name):
+    """A voice from studio/voices/: <name>.wav is the clone reference, <name>.json has its exact ref_txt and speed."""
+    j = json.load(open(os.path.join(HERE, f"voices/{name}.json")))
+    return {"ref": os.path.join(HERE, f"voices/{name}.wav"), "ref_txt": j["ref_txt"], "speed": j["speed"]}
+
+
+# the reference must be in the narration's language, or its accent carries over
+V = getattr(S, "VOICE", {})
+VOICE = voice(V) if isinstance(V, str) else voice("en_deep_us_b" if LANG == "en" else "deep_narrator") | V
 PRONUNCIATION = getattr(S, "PRONUNCIATION", {})
 N, GAP = int(os.environ.get("N", 3)), 0.28  # takes per sentence, silence between sentences (s)
 TAKES, OUT = ".tmp/takes", "assets/voice"
@@ -93,7 +100,7 @@ def pick():
             a, sr = sf.read(p)
             segs, _ = wm.transcribe(p, language=LANG, beam_size=1)
             heard = " ".join(s.text for s in segs)
-            n = score(f, heard, len(a) / sr)
+            n = score(f, heard, len(a) / sr) if np.sqrt(np.mean(a ** 2)) > 0.003 else -2.0  # silent take
             if best is None or n > best[0]:
                 best = (n, k, heard)
             taskline("add", "asr")

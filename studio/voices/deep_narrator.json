@@ -7,6 +7,10 @@
   "speed": 0.85,
   "guidance_scale": 2.0,
   "num_step": 32,
-  "measured": {"f0_med_hz": 105, "centroid": 1809},
-  "note": "generated without a fixed seed: the .wav next to this file is the approved sample; new lines with the same parameters shift the timbre a little. Use a fixed seed (torch.manual_seed) to repeat."
+  "measured": {
+    "f0_med_hz": 105,
+    "centroid": 1809
+  },
+  "note": "generated without a fixed seed: the .wav next to this file is the approved sample; new lines with the same parameters shift the timbre a little. Use a fixed seed (torch.manual_seed) to repeat.",
+  "ref_txt": "Era uma noite comum, até que o telefone tocou. Do outro lado, ninguém falava. Só havia uma respiração... lenta, pesada. A polícia nunca explicou o que aconteceu naquela casa. Mas os arquivos revelam algo que ninguém queria que você soubesse."
 }

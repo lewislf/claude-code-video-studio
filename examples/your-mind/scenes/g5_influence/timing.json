@@ -1,0 +1,25 @@
+{
+ "start": {
+  "influence_0": 0.0,
+  "influence_1": 3.93,
+  "influence_2": 13.57,
+  "influence_3": 30.09,
+  "influence_4": 33.34,
+  "influence_5": 47.32,
+  "influence_6": 64.42,
+  "influence_7": 77.31,
+  "influence_8": 88.76
+ },
+ "dur": {
+  "influence_0": 3.43,
+  "influence_1": 9.14,
+  "influence_2": 16.02,
+  "influence_3": 2.75,
+  "influence_4": 13.48,
+  "influence_5": 16.6,
+  "influence_6": 12.39,
+  "influence_7": 10.95,
+  "influence_8": 8.53
+ },
+ "total": 97.29
+}

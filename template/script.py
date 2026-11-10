@@ -7,7 +7,7 @@ Write numbers as words in the spoken text ("two thousand thirteen"); PRONUNCIATI
 
 LANG = "en"  # ISO code for OmniVoice and whisper; any language OmniVoice supports ("pt", "es", ...)
 PRONUNCIATION = {}  # word in the text -> how the voice should say it, e.g. {"GIF": "jif"}
-# VOICE = {"ref": "voices/mine.wav", "ref_txt": "exact transcript of the wav", "speed": 0.9}  # optional; default: studio/voices/deep_narrator
+# VOICE = "en_deep_uk_a"  # optional: a name from studio/voices/, or {"ref": wav, "ref_txt": exact transcript, "speed": 0.9}
 # MUSIC = ["MusicGen prompt 1", "prompt 2"]                                                   # optional
 
 P, G = 1.4, 0.5  # long pause and short breath

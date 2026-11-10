@@ -10,7 +10,7 @@ with `studio/assemble.py`). Below, `ST` is `<repo>/studio`.
 
 Project = a folder with `script.py` + `scenes/<group>/build_<group>.py`. Every command runs **from inside the project folder**.
 New video: `cp -r <repo>/template ~/videos/<name>` and replace the script. Full reference of a 13 min video made this way
-(in Brazilian Portuguese): `<repo>/examples/sua-mente/` (code frozen as it was used, with the original machine's paths).
+(an English dub of a Brazilian Portuguese original): `<repo>/examples/your-mind/`.
 
 ## Steps
 
@@ -42,7 +42,7 @@ the narration, prefixed ids, no render, only `snap.sh`). Check the frames before
 Deliver ONE final version: 1.35x, 1080p. The phone copy (540p) exists to stay small for sending; say that is why it is not 1080p.
 
 YouTube: title, description, chapters (times already in the sped-up version) and sources by topic. Template:
-`examples/sua-mente/video-v2/descricao-youtube.md` (in Portuguese). Cover: the `ai-cover` skill.
+`examples/your-mind/film/youtube-description.md`. Cover: the `ai-cover` skill.
 
 ## Care
 

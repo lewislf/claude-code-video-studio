@@ -27,9 +27,9 @@ Watch it in the [`your-mind` release](https://github.com/lewislf/claude-code-vid
 
 The generated voice, the music, the pages of the cited articles, the trailer footage (`film/renders/v2-mixed.mp4`), the
 laugh take of the ending and the renders, about 1.3 GB. The scene builds run without them and write HyperFrames
-compositions (except g2, which reads the size of an article page); rendering and the final assembly need them.
+compositions (the article pages show up blank); rendering the final video needs them.
 
 ```bash
-cd scenes/g4_reading && python3 build_g4_reading.py # writes compositions/
+cd scenes/g2_locked && python3 build_g2_locked.py   # writes compositions/
 cd ../.. && ./render_all.sh                          # renders every group but g8 into film/assets/clips/
 ```

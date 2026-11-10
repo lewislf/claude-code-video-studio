@@ -311,7 +311,8 @@ def locked_4():
     start, dur = seg(SCENE, 4)
     t_mit, t_mice, t_amnesia, t_remember, t_lost, t_science, t_switch_on, t_light, t_neurons, t_memory = (
         3.2, 5.06, 5.99, 6.87, 8.92, 10.83, 11.75, 12.89, 13.37, 14.59)
-    b64 = base64.b64encode(open(os.path.join(DOCS, "ryan2015.png"), "rb").read()).decode()
+    img = os.path.join(DOCS, "ryan2015.png")  # not in the repository (see CREDITS.md in film): blank page without it
+    b64 = base64.b64encode(open(img, "rb").read()).decode() if os.path.exists(img) else ""
     PW = 700
     PH = PW * 2071 / 1600
     k = PW / 1600

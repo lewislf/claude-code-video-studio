@@ -1,17 +1,81 @@
-# claude-code-video-studio
+<p align="center">
+  <img src=".claude-plugin/icon.png" alt="mascote do claude-code-video-studio editando um vídeo" width="220">
+</p>
 
-[English](README.md) · **Português**
+<h1 align="center">claude-code-video-studio</h1>
 
-Pipeline pra fazer vídeo explicativo narrado inteiro na sua máquina, com o Claude Code dirigindo: roteiro, voz, trilha,
-cenas animadas, montagem, versão acelerada e capa. Nenhuma API paga. Voz no OmniVoice, música no MusicGen, cenas em
-HTML/SVG/GSAP renderizadas pelo [HyperFrames](https://github.com/heygen-com/hyperframes), capa no SDXL via ComfyUI.
+<p align="center"><b>Vídeo explicativo narrado feito na sua própria GPU, com o Claude Code dirigindo.</b></p>
 
-[<img src="media/player-pt-BR.gif" width="720" alt="Assistir: O contrato que você nunca assinou (13:15)">](https://github.com/lewislf/claude-code-video-studio/releases/download/sua-mente/sua-mente-1080p.mp4)
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="licença MIT"></a>
+  <a href="#começo-rápido"><img src="https://img.shields.io/badge/Claude%20Code-plugin-D97757" alt="plugin do Claude Code"></a>
+  <img src="https://img.shields.io/badge/voz%20%C2%B7%20m%C3%BAsica%20%C2%B7%20render-local-2ea44f" alt="voz, música e render rodam localmente">
+</p>
+
+<p align="center">
+  <a href="#começo-rápido">Começo rápido</a> ·
+  <a href="#o-que-sai">O que sai</a> ·
+  <a href="#por-que-local">Por que local</a> ·
+  <a href="#como-funciona">Como funciona</a> ·
+  <a href="#instalação">Instalação</a> ·
+  <a href="README.md">English</a>
+</p>
+
+Roteiro, voz, trilha, cenas animadas, montagem, versão acelerada e capa, tudo na sua máquina. Voz no OmniVoice, música no
+MusicGen, cenas em HTML/SVG/GSAP renderizadas pelo [HyperFrames](https://github.com/heygen-com/hyperframes), capa no SDXL via
+ComfyUI. Nenhuma API de voz, música ou vídeo pra pagar.
+
+[<img src="media/player-pt-BR.gif" width="720" alt="Assistir: Quem tem a chave para a sua mente? (13:15)">](https://github.com/lewislf/claude-code-video-studio/releases/download/sua-mente/sua-mente-1080p.mp4)
 
 Feito com isto: *Sua mente em termos de uso*, 13 minutos sobre neurotecnologia, em português (trabalho de Computação e
 Sociedade, UFES). O código completo, já da versão dublada em inglês, está em [`examples/your-mind/`](examples/your-mind/).
 
 Clique no player pra assistir em 1080p (552 MB), ou a [cópia leve de 27 MB](https://github.com/lewislf/claude-code-video-studio/releases/download/sua-mente/sua-mente-celular.mp4). Descrição e capítulos na [release](https://github.com/lewislf/claude-code-video-studio/releases/tag/sua-mente).
+
+## Começo rápido
+
+Instale as skills como plugin do Claude Code:
+
+```bash
+claude plugin marketplace add lewislf/claude-code-video-studio
+claude plugin install video-studio@claude-code-video-studio
+```
+
+Depois é só pedir. Alguns pedidos que funcionam:
+
+- "faz um vídeo narrado sobre por que o céu é azul, 3 minutos"
+- "refaz a cena 12, o diagrama ficou pequeno"
+- "troca a voz por uma britânica"
+- "gera a versão final em 1,35x e manda pro celular"
+- "escreve a descrição do YouTube com capítulos" / "faz uma capa"
+
+A skill `narrated-video` sabe as etapas; as cenas vão pra subagentes com o briefing `studio/AGENT.md`; a skill `ai-cover`
+gera a thumbnail. A máquina ainda precisa da [instalação](#instalação) abaixo.
+
+## O que sai
+
+- um MP4 por vídeo, com a narração sobre uma trilha baixa e uma barra de progresso fina;
+- uma versão acelerada (1,35x por padrão) e uma cópia leve pro celular;
+- a voz clonada de um clipe de referência, em qualquer idioma do OmniVoice, com 3 tentativas por frase e o whisper escolhendo
+  a mais clara;
+- cenas no tempo da palavra: a animação dispara no instante em que a voz fala;
+- remendo: refaz uma cena (`patch.py`) ou o áudio inteiro (`swap_audio.py`) sem remontar o resto;
+- dublagem: um idioma novo sobre a mesma linha do tempo, com legenda `.srt` (`examples/your-mind/dub.py`, que é como o exemplo
+  virou inglês);
+- título, descrição e capítulos do YouTube, e capa 1280x720.
+
+## Por que local
+
+Projetos parecidos, pelo que dizem os READMEs deles (novembro de 2026):
+
+| | Voz | Música | Visual |
+|---|---|---|---|
+| **este repo** | OmniVoice, local, com clonagem | MusicGen, local | cenas HyperFrames escritas pelo Claude, render local |
+| [OpenMontage](https://github.com/calesthio/OpenMontage) | Piper offline, ou TTS na nuvem | biblioteca royalty-free ou Suno | banco de vídeos, ou APIs pagas de imagem/vídeo |
+| [video_explainer](https://github.com/prajwal-y/video_explainer) | ElevenLabs ou Edge TTS (online) | MusicGen, local | Remotion |
+| [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | Edge TTS (online) ou Index-TTS | arquivos seus | imagens no ComfyUI ou APIs de imagem |
+
+O roteiro continua vindo do Claude Code, então você precisa de um plano do Claude. Todo o resto roda na sua GPU.
 
 ## Como funciona
 
@@ -46,11 +110,13 @@ tem que estar no idioma da narração. Em `studio/voices/` há oito referências
 em português (`deep_narrator`). Sem `VOICE`, inglês usa `en_deep_us_b` e os outros idiomas usam `deep_narrator`; `VOICE = "en_deep_uk_a"`
 escolhe outra, ou aponte pra um clipe seu.
 
-## Começar um vídeo
+## Rodar na mão
+
+O mesmo pipeline sem as skills:
 
 ```bash
 cp -r template ~/videos/meu-video && cd ~/videos/meu-video
-ST=~/claude-code-video-studio/studio; PY=<python com omnivoice, faster-whisper e transformers>
+ST=~/claude-code-video-studio/studio; PY=~/.venvs/studio/bin/python   # o ambiente da Instalação
 
 $PY $ST/tts.py generate && $PY $ST/tts.py pick          # voz, 3 tentativas por frase, fica a que o whisper entende melhor
 python3 $ST/transcribe.py                               # tempo de cada palavra
@@ -60,16 +126,6 @@ python3 $ST/assemble.py                                 # renders/v1.mp4
 $ST/progress_bar.sh v1 v1-bar && $ST/deliver.sh v1-bar  # barra de progresso e versão 1,35x
 ```
 
-Com o Claude Code, é mais fácil pedir. Instale as skills como plugin e diga "faz um vídeo narrado sobre X":
-
-```bash
-claude plugin marketplace add lewislf/claude-code-video-studio
-claude plugin install video-studio@claude-code-video-studio
-```
-
-A skill `narrated-video` sabe as etapas; as cenas vão pra subagentes com o briefing `studio/AGENT.md`; a skill `ai-cover`
-gera a thumbnail.
-
 | Pasta | O que tem |
 |---|---|
 | `studio/` | o pipeline (voz, palavras, música, cenas, montagem, remendo, entrega) e o motor das cenas |
@@ -77,11 +133,30 @@ gera a thumbnail.
 | `skills/` | `narrated-video` e `ai-cover` pro Claude Code |
 | `examples/your-mind/` | o vídeo da UFES em inglês: 72 cenas, roteiro, dublagem, briefings. O render precisa dos assets (voz, páginas de artigo, trailers), que ficaram fora do repo |
 
-## Requisitos
+## Instalação
 
-GPU NVIDIA (testado numa RTX 5070 de 8 GB), Linux com `systemd-run` (os scripts põem teto de memória), ffmpeg, Node (pro
-`npx hyperframes`), um Python com `omnivoice`, `faster-whisper` e `transformers`, e ComfyUI com o SDXL base pra capa.
-O `taskline`, se instalado, mostra o progresso.
+GPU NVIDIA (testado numa RTX 5070 de 8 GB), Linux com `systemd-run` (os scripts põem teto de memória), ffmpeg e Node 22+
+(pro `npx hyperframes`). Voz, tempo das palavras e trilha usam um ambiente Python 3.11:
+
+```bash
+python3.11 -m venv ~/.venvs/studio
+~/.venvs/studio/bin/pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu128
+~/.venvs/studio/bin/pip install "omnivoice @ git+https://github.com/debpalash/VoiceStudio" \
+  faster-whisper transformers accelerate soundfile librosa
+```
+
+A gente roda com omnivoice 0.5.7, faster-whisper 1.2.1, transformers 5.20 e torch 2.11 (cu128). Os pesos do OmniVoice e do
+MusicGen baixam do Hugging Face na primeira execução. A capa precisa do ComfyUI com o SDXL base (veja
+`skills/ai-cover/SKILL.md`). O `taskline`, se instalado, mostra o progresso.
+
+## Licenças dos modelos
+
+O código daqui é MIT, mas os modelos têm termos próprios, e são eles que decidem o que você pode fazer com o vídeo:
+
+- pesos do MusicGen (`facebook/musicgen-small`): CC-BY-NC 4.0, **não comercial**. Em canal monetizado, troque a trilha por uma
+  que você tenha direito de usar.
+- OmniVoice: o pacote `omnivoice` (VoiceStudio) é AGPL-3.0; os pesos `k2-fsa/OmniVoice` seguem o model card deles.
+- SDXL base: CreativeML Open RAIL++-M.
 
 Voz e música são geradas por IA; diga isso na descrição do vídeo.
 

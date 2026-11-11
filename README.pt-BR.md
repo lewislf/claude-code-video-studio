@@ -41,6 +41,10 @@ claude plugin marketplace add lewislf/claude-code-video-studio
 claude plugin install video-studio@claude-code-video-studio
 ```
 
+Outros agentes (Cursor, Codex e os demais que o [skills.sh](https://www.skills.sh/lewislf/claude-code-video-studio) suporta)
+recebem as mesmas skills com `npx skills add lewislf/claude-code-video-studio`. Esse comando copia só as pastas das skills,
+então clone também este repositório em `~/claude-code-video-studio` pro pipeline do `studio/`.
+
 Depois é só pedir. Alguns pedidos que funcionam:
 
 - "faz um vídeo narrado sobre por que o céu é azul, 3 minutos"

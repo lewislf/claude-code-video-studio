@@ -44,6 +44,10 @@ claude plugin marketplace add lewislf/claude-code-video-studio
 claude plugin install video-studio@claude-code-video-studio
 ```
 
+Other agents (Cursor, Codex and the rest [skills.sh](https://www.skills.sh/lewislf/claude-code-video-studio) supports) take the
+same skills with `npx skills add lewislf/claude-code-video-studio`. That copies only the skill folders, so also clone this repo to
+`~/claude-code-video-studio` for the pipeline in `studio/`.
+
 Then ask in plain words. Some prompts that work:
 
 - "make a narrated video about why the sky is blue, 3 minutes"

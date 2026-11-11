@@ -12,7 +12,7 @@ Made with this: *Your mind under terms of use*, 13 minutes on neurotechnology (a
 UFES). It was made in Brazilian Portuguese and then dubbed into English with this pipeline. Full code in
 [`examples/your-mind/`](examples/your-mind/).
 
-Click the player to watch in 1080p (665 MB), or the [light 26 MB copy](https://github.com/lewislf/claude-code-video-studio/releases/download/your-mind/your-mind-en-phone.mp4). Description
+Click the player to watch in 1080p (716 MB), or the [light 26 MB copy](https://github.com/lewislf/claude-code-video-studio/releases/download/your-mind/your-mind-en-phone.mp4). Description
 and chapters in the [release](https://github.com/lewislf/claude-code-video-studio/releases/tag/your-mind); the
 [original Portuguese cut](https://github.com/lewislf/claude-code-video-studio/releases/tag/sua-mente) has its own.
 

@@ -142,12 +142,14 @@ NVIDIA GPU (tested on an 8 GB RTX 5070), Linux with `systemd-run` (the scripts s
 
 ```bash
 python3.11 -m venv ~/.venvs/studio
-~/.venvs/studio/bin/pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu128
-~/.venvs/studio/bin/pip install "omnivoice @ git+https://github.com/debpalash/VoiceStudio" \
+~/.venvs/studio/bin/pip install torch torchaudio torchvision --index-url https://download.pytorch.org/whl/cu128
+~/.venvs/studio/bin/pip install "omnivoice @ git+https://github.com/debpalash/VoiceStudio@73b83768bdc02dd7068c5c2fefcfa0530fa622e4" \
   faster-whisper transformers accelerate soundfile librosa
 ```
 
-We run it with omnivoice 0.5.7, faster-whisper 1.2.1, transformers 5.20 and torch 2.11 (cu128). The OmniVoice and MusicGen
+The environment takes about 9 GB. Tested from scratch with torch 2.11 (cu128), VoiceStudio at the pinned commit, faster-whisper
+1.2.1 and transformers 5.22; the template video renders end to end. Install `torchvision` from the PyTorch index together with
+torch: the copy pip pulls in for `omnivoice` does not match the cu128 build and breaks the import. The OmniVoice and MusicGen
 weights download from Hugging Face on the first run. The cover needs ComfyUI with SDXL base (see `skills/ai-cover/SKILL.md`).
 `taskline`, if installed, shows progress.
 

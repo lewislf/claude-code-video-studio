@@ -1,6 +1,6 @@
 {
   "name": "video-studio",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Script to finished narrated video on your own GPU: AI voice, music, animated HyperFrames scenes, assembly and YouTube cover.",
   "author": {
     "name": "lewislf",
@@ -17,5 +17,9 @@
     "music",
     "hyperframes",
     "local-ai"
-  ]
+  ],
+  "documentationUrl": "https://github.com/lewislf/claude-code-video-studio#readme",
+  "supportUrl": "https://github.com/lewislf/claude-code-video-studio/issues",
+  "privacyPolicyUrl": "https://github.com/lewislf/claude-code-video-studio#what-it-runs-and-downloads",
+  "termsOfServiceUrl": "https://github.com/lewislf/claude-code-video-studio/blob/main/LICENSE"
 }

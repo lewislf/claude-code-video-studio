@@ -49,4 +49,4 @@ a new, good-looking illustration, one strong image, thick white title on top, li
 
 ComfyUI at `~/ComfyUI` (`.venv`), checkpoint `models/checkpoints/sd_xl_base_1.0.safetensors`. The script starts the server
 on port 8199 with `systemd-run MemoryMax=8G` and stops it at the end. Log at `/tmp/comfy-sdxl.log`. Progress in taskline (`sdxl`).
-Cover published with the Portuguese cut of the example video (title in Portuguese): cover-pt-BR.png in the media folder of the `claude-code-video-studio` repo.
+Cover published with the Portuguese cut of the example video (title in Portuguese): cover-pt-BR.png on the `media` branch of the `claude-code-video-studio` repo.

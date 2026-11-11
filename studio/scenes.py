@@ -12,8 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from common import FF, MAP_FILE, TMP
 
-HF = {"$schema": "https://hyperframes.heygen.com/schema/hyperframes.json",
-      "paths": {"blocks": "compositions", "components": "compositions/components", "assets": "assets"}, "media": {"autoProxy": True}}
+HF = {"paths": {"blocks": "compositions", "components": "compositions/components", "assets": "assets"}, "media": {"autoProxy": True}}
 PKG = {"name": "scenes", "private": True, "type": "module", "scripts": {"check": "npx --yes hyperframes@0.8.185 check"}}
 
 

@@ -5,8 +5,8 @@ description: Local pipeline to make, redo or patch any narrated explainer video 
 
 # Narrated video
 
-Everything lives in the `claude-code-video-studio` repo (at `~/claude-code-video-studio`; if it is not there, look for the folder
-with `studio/assemble.py`). Below, `ST` is `<repo>/studio`.
+Everything lives in the `claude-code-video-studio` repo: two folders above this skill's base directory when installed as a
+plugin, `~/claude-code-video-studio` for a clone (otherwise look for the folder with `studio/assemble.py`). Below, `ST` is `<repo>/studio`.
 
 Project = a folder with `script.py` + `scenes/<group>/build_<group>.py`. Every command runs **from inside the project folder**.
 New video: `cp -r <repo>/template ~/videos/<name>` and replace the script. Full reference of a 13 min video made this way

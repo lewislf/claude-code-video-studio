@@ -62,7 +62,13 @@ python3 $ST/assemble.py                                 # renders/v1.mp4
 $ST/progress_bar.sh v1 v1-bar && $ST/deliver.sh v1-bar  # progress bar and 1.35x version
 ```
 
-With Claude Code it is easier to ask: copy `skills/` to `~/.claude/skills/` and say "make a narrated video about X".
+With Claude Code it is easier to ask. Install the skills as a plugin and say "make a narrated video about X":
+
+```bash
+claude plugin marketplace add lewislf/claude-code-video-studio
+claude plugin install video-studio@claude-code-video-studio
+```
+
 The `narrated-video` skill knows the steps; scenes go to subagents with the `studio/AGENT.md` briefing; the `ai-cover` skill
 makes the thumbnail.
 

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-code-video-studio",
+  "description": "Narrated explainer videos made 100% locally with Claude Code: OmniVoice, MusicGen, HyperFrames, SDXL.",
+  "owner": {
+    "name": "lewislf",
+    "url": "https://github.com/lewislf"
+  },
+  "plugins": [
+    {
+      "name": "video-studio",
+      "description": "Script to finished narrated video on your own GPU: AI voice, music, animated HyperFrames scenes, assembly and YouTube cover.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/lewislf/claude-code-video-studio",
+      "license": "MIT",
+      "keywords": ["video", "explainer-video", "tts", "musicgen", "hyperframes", "local-ai"]
+    }
+  ]
+}

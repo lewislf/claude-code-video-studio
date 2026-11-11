@@ -140,13 +140,15 @@ GPU NVIDIA (testado numa RTX 5070 de 8 GB), Linux com `systemd-run` (os scripts 
 
 ```bash
 python3.11 -m venv ~/.venvs/studio
-~/.venvs/studio/bin/pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu128
-~/.venvs/studio/bin/pip install "omnivoice @ git+https://github.com/debpalash/VoiceStudio" \
+~/.venvs/studio/bin/pip install torch torchaudio torchvision --index-url https://download.pytorch.org/whl/cu128
+~/.venvs/studio/bin/pip install "omnivoice @ git+https://github.com/debpalash/VoiceStudio@73b83768bdc02dd7068c5c2fefcfa0530fa622e4" \
   faster-whisper transformers accelerate soundfile librosa
 ```
 
-A gente roda com omnivoice 0.5.7, faster-whisper 1.2.1, transformers 5.20 e torch 2.11 (cu128). Os pesos do OmniVoice e do
-MusicGen baixam do Hugging Face na primeira execução. A capa precisa do ComfyUI com o SDXL base (veja
+O ambiente ocupa uns 9 GB. Testado do zero com torch 2.11 (cu128), o VoiceStudio no commit fixado, faster-whisper 1.2.1 e
+transformers 5.22; o vídeo do template sai inteiro. Instale o `torchvision` pelo índice do PyTorch junto com o torch: a cópia
+que o pip puxa pro `omnivoice` não bate com o build cu128 e quebra o import. Os pesos do OmniVoice e do MusicGen baixam do
+Hugging Face na primeira execução. A capa precisa do ComfyUI com o SDXL base (veja
 `skills/ai-cover/SKILL.md`). O `taskline`, se instalado, mostra o progresso.
 
 ## Licenças dos modelos

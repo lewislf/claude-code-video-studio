@@ -25,7 +25,7 @@ Roteiro, voz, trilha, cenas animadas, montagem, versão acelerada e capa, tudo n
 MusicGen, cenas em HTML/SVG/GSAP renderizadas pelo [HyperFrames](https://github.com/heygen-com/hyperframes), capa no SDXL via
 ComfyUI. Nenhuma API de voz, música ou vídeo pra pagar.
 
-[<img src="media/player-pt-BR.gif" width="720" alt="Assistir: Quem tem a chave para a sua mente? (13:15)">](https://github.com/lewislf/claude-code-video-studio/releases/download/sua-mente/sua-mente-1080p.mp4)
+[<img src="https://raw.githubusercontent.com/lewislf/claude-code-video-studio/media/player-pt-BR.gif" width="720" alt="Assistir: Quem tem a chave para a sua mente? (13:15)">](https://github.com/lewislf/claude-code-video-studio/releases/download/sua-mente/sua-mente-1080p.mp4)
 
 Feito com isto: *Sua mente em termos de uso*, 13 minutos sobre neurotecnologia, em português (trabalho de Computação e
 Sociedade, UFES). O código completo, já da versão dublada em inglês, está em [`examples/your-mind/`](examples/your-mind/).

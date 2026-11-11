@@ -43,9 +43,12 @@ print(t['dur'], ','.join(f'{a}:{b}:{c}' for a,b,c in bursts), g('failing',8.4), 
 $CAP $FF -loglevel error -y -i $R/en-1x.mp4 -an -vf "setpts=PTS/1.35,fps=30" -c:v libx264 -preset veryfast -crf 16 -pix_fmt yuv420p $R/en-135-mute.mp4
 $FF -loglevel error -y -i $R/en-135-mute.mp4 -i out/tmp/audio.m4a -map 0:v -map 1:a -c copy -shortest $R/en-135.mp4
 (cd film && ./progress_bar.sh en-135 en-135-bar >/dev/null 2>&1); taskline add rebuild-en
-$FF -loglevel error -y -i $R/en-135-bar.mp4 -i out/your-mind-en.srt -map 0:v -map 0:a -map 1:s -c:v copy -c:a copy -c:s mov_text \
-  -metadata:s:a:0 language=eng -metadata:s:s:0 language=eng -movflags +faststart out/your-mind-en-1080p.mp4
-$FF -loglevel error -y -i out/your-mind-en-1080p.mp4 -map 0:v -map 0:a -map 0:s -vf scale=-2:720 -c:v libx264 -preset medium -crf 32 \
-  -maxrate 220k -bufsize 440k -c:a aac -b:a 64k -c:s mov_text -movflags +faststart out/your-mind-en-phone.mp4
+# subtitles burned in (needs ffmpeg with libass): bold with a thick outline, above the scenes' own bottom text (y ~ 915-970);
+# a player's soft subtitle is thin white and disappears over the white article pages. The .srt stays separate for YouTube.
+SUBS="FontName=DejaVu Sans,FontSize=12,Bold=1,BorderStyle=1,Outline=2.2,Shadow=1.5,OutlineColour=&H00101010,MarginV=51"
+$FF -loglevel error -y -i $R/en-135-bar.mp4 -vf "subtitles=out/your-mind-en.srt:force_style='$SUBS'" -c:v libx264 -preset veryfast -crf 16 \
+  -pix_fmt yuv420p -c:a copy -metadata:s:a:0 language=eng -movflags +faststart out/your-mind-en-1080p.mp4
+$FF -loglevel error -y -i out/your-mind-en-1080p.mp4 -vf scale=-2:720 -c:v libx264 -preset medium -crf 32 \
+  -maxrate 220k -bufsize 440k -c:a aac -b:a 64k -movflags +faststart out/your-mind-en-phone.mp4
 taskline done rebuild-en
 ls -la out/your-mind-en-*.mp4

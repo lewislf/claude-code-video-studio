@@ -34,8 +34,8 @@ contract = (f'<g transform="translate(400 720) rotate(-6) scale(.82)"><g transfo
             f'<text x="0" y="26" text-anchor="middle" font-family="IBM Plex Mono" font-weight="700" font-size="72" fill="#d81e4a">ACCEPTED</text></g>'
             f'</g></g>')
 
-title = lambda dx, color, op: (f'<g transform="translate({dx} 0)" opacity="{op}"><text x="70" y="170" font-family="EB Garamond" font-weight="700" font-size="150" fill="{color}">YOU NEVER</text>'
-                              f'<text x="70" y="300" font-family="EB Garamond" font-weight="700" font-size="150" fill="{color}">SIGNED.</text></g>')
+title = lambda dx, color, op: (f'<g transform="translate({dx} 0)" opacity="{op}"><text x="70" y="170" font-family="EB Garamond" font-weight="700" font-size="150" fill="{color}">WHO HOLDS</text>'
+                              f'<text x="70" y="300" font-family="EB Garamond" font-weight="700" font-size="150" fill="{color}">THE KEY?</text></g>')
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1280" height="720"><defs>{basilisk_defs(p)}'
        f'<filter id="{p}-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'
        f'<radialGradient id="{p}-bg" cx="70%" cy="50%" r="75%"><stop offset="0" stop-color="#3a0c3a"/><stop offset=".55" stop-color="#140620"/><stop offset="1" stop-color="#030108"/></radialGradient>'

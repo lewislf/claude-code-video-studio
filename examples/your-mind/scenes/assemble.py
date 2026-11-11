@@ -29,7 +29,7 @@ for group in sys.argv[1:]:
     start, total = m.write_scenes(scenes, folder)
     output = os.path.join(folder, "clips.mp4")
     cmd = (f'mkdir -p "${{TMPDIR:-/tmp}}/studio" && flock "${{TMPDIR:-/tmp}}/studio/snap.lock" systemd-run --user --scope -q -p MemoryMax={os.environ.get("MEMCAP", "3500M")} -p MemorySwapMax=0 '
-           f'bash -c \'cd "{folder}" && npx hyperframes render --fps 30 --quality draft --workers {os.environ.get("WORKERS", "2")} {os.environ.get("RFLAGS", "")} -o clips.mp4\'')
+           f'bash -c \'cd "{folder}" && npx hyperframes@0.8.185 render --fps 30 --quality draft --workers {os.environ.get("WORKERS", "2")} {os.environ.get("RFLAGS", "")} -o clips.mp4\'')
     r = subprocess.run(cmd, shell=True, capture_output=True, text=True)
     if not os.path.exists(output):
         print("render FAILED", group, r.stdout[-400:], r.stderr[-400:]); continue

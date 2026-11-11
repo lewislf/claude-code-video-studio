@@ -83,7 +83,7 @@ def generate():
 def render(start, dur):
     out = os.path.join(PROJ, "trailers.mp4")
     cmd = (f'mkdir -p "${{TMPDIR:-/tmp}}/studio" && flock "${{TMPDIR:-/tmp}}/studio/snap.lock" systemd-run --user --scope -q -p MemoryMax=4G -p MemorySwapMax=0 '
-           f'bash -c \'cd "{PROJ}" && npx hyperframes render --fps 30 --quality draft --workers 1 -o trailers.mp4\'')
+           f'bash -c \'cd "{PROJ}" && npx hyperframes@0.8.185 render --fps 30 --quality draft --workers 1 -o trailers.mp4\'')
     subprocess.run(cmd, shell=True, check=True)
     os.makedirs(DEST, exist_ok=True)
     for cid, t0 in start.items():

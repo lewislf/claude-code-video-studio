@@ -47,5 +47,5 @@ Read before writing a scene. Each item cost at least one round of fixes.
 18. Before any snapshot/render: `free -h` (>= 6 GB available) and run inside
     `systemd-run --user --scope -q -p MemoryMax=3500M -p MemorySwapMax=0 <command>`. Two agents never render at the same time
     (the coordinator renders). Agents only run `check` and `snapshot`, one at a time.
-19. `npx hyperframes snapshot --at t1,t2 -o folder` (times of the index.html project); the contact sheet lands in `folder/contact-sheet*.jpg`.
+19. `npx hyperframes@0.8.185 snapshot --at t1,t2 -o folder` (times of the index.html project); the contact sheet lands in `folder/contact-sheet*.jpg`.
 20. Video inside a timed clip does not render: videos sit loose at the root (not the case for the new scenes, which are SVG).

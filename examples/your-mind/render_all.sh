@@ -41,7 +41,7 @@ done
 
 render() {  # dir output
   [ -f "$1/$2" ] && [ "$1/$2" -nt .start ] && return 0
-  mkdir -p "${TMPDIR:-/tmp}/studio"; flock "${TMPDIR:-/tmp}/studio/snap.lock" $CAP bash -c "cd '$1' && npx hyperframes render --fps 30 --quality draft --workers 2 -o '$2'" >/dev/null 2>&1
+  mkdir -p "${TMPDIR:-/tmp}/studio"; flock "${TMPDIR:-/tmp}/studio/snap.lock" $CAP bash -c "cd '$1' && npx hyperframes@0.8.185 render --fps 30 --quality draft --workers 2 -o '$2'" >/dev/null 2>&1
   [ -f "$1/$2" ] || { echo "FAILED render $1"; return 1; }
 }
 cut() {  # input start dur id

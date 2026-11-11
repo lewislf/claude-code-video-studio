@@ -57,8 +57,8 @@ the source image, but gain camera, an animated highlight of the quoted passage, 
 
 ## Before delivering
 
-1. `python3 build_<group>.py` and `npx hyperframes check` with no errors.
-2. `npx hyperframes snapshot --at ...` at 6 or more moments per scene, look at the contact sheet.
+1. `python3 build_<group>.py` and `npx hyperframes@0.8.185 check` with no errors.
+2. `npx hyperframes@0.8.185 snapshot --at ...` at 6 or more moments per scene, look at the contact sheet.
 3. Critic (`visual-validator`) at full screen. It only passes with PASS or minor items.
 4. Only then render the clip.
 

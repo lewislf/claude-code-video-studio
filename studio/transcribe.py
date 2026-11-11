@@ -1,4 +1,4 @@
-"""Timing of every narrated word (whisper small via `npx hyperframes transcribe`).
+"""Timing of every narrated word (whisper small via `npx hyperframes@0.8.185 transcribe`).
 
   python3 transcribe.py [scene ...]     # output: words/<scene>.json, times in seconds within the scene
 

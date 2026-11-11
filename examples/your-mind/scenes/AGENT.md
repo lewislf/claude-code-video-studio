@@ -26,8 +26,8 @@ Hard rules:
 - Prefix every id with the scene id. No GSAP `x/y/scale` on an element with a `transform` attribute (outer + inner group).
 - Write only inside your folder `scenes/<group>/` (create it). Copy `hyperframes.json` and `package.json` from `scenes-v4/`.
   Don't touch `film/`, `scenes-v3/`, `scenes-v4/`, or other groups. Don't commit/push.
-- Machine with 14 GB and several sessions: do NOT run `npx hyperframes render`. To look at frames use ONLY
-  `scenes/snap.sh <your-folder> <output> <t1,t2,...>` (global lock, one at a time, memory ceiling). `npx hyperframes check --json`
+- Machine with 14 GB and several sessions: do NOT run `npx hyperframes@0.8.185 render`. To look at frames use ONLY
+  `scenes/snap.sh <your-folder> <output> <t1,t2,...>` (global lock, one at a time, memory ceiling). `npx hyperframes@0.8.185 check --json`
   can run directly (it's light).
 - Cycle per scene: write -> `check` -> snapshot at >= 6 moments (including every word event) -> look at the contact sheet
   (use the Read tool on the images) -> fix -> ask the `visual-validator` agent for a critique if you have the Agent tool

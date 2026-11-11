@@ -136,7 +136,7 @@ $ST/progress_bar.sh v1 v1-bar && $ST/deliver.sh v1-bar  # barra de progresso e v
 ## Instalação
 
 GPU NVIDIA (testado numa RTX 5070 de 8 GB), Linux com `systemd-run` (os scripts põem teto de memória), ffmpeg e Node 22+
-(pro `npx hyperframes`). Voz, tempo das palavras e trilha usam um ambiente Python 3.11:
+(pro `npx hyperframes@0.8.185`). Voz, tempo das palavras e trilha usam um ambiente Python 3.11:
 
 ```bash
 python3.11 -m venv ~/.venvs/studio
@@ -150,6 +150,18 @@ transformers 5.22; o vídeo do template sai inteiro. Instale o `torchvision` pel
 que o pip puxa pro `omnivoice` não bate com o build cu128 e quebra o import. Os pesos do OmniVoice e do MusicGen baixam do
 Hugging Face na primeira execução. A capa precisa do ComfyUI com o SDXL base (veja
 `skills/ai-cover/SKILL.md`). O `taskline`, se instalado, mostra o progresso.
+
+## O que roda e o que baixa
+
+Tudo roda na sua máquina. O plugin não envia dado nenhum: sem telemetria, sem chamada de API própria. Ele baixa:
+
+- os pesos do OmniVoice, do whisper e do MusicGen do Hugging Face, na primeira execução de cada etapa;
+- o `hyperframes@0.8.185` do npm via `npx`, pra renderizar as cenas e marcar o tempo das palavras (usa um Chrome headless local);
+- o GSAP 3.14.2 do cdn.jsdelivr.net e as fontes do fonts.googleapis.com, carregados pelas páginas das cenas durante o render;
+- os pacotes Python da [Instalação](#instalação), quando você instala.
+
+As skills rodam os scripts de `studio/` com `python3`, `ffmpeg` e `systemd-run`, dentro da pasta do vídeo, e a skill
+`ai-cover` conversa com um servidor ComfyUI em `127.0.0.1`.
 
 ## Licenças dos modelos
 
@@ -169,5 +181,4 @@ Feito por [lewislf](https://github.com/lewislf) e [FeLiPeOLi7](https://github.co
 ## Licença
 
 Código sob [MIT](LICENSE). Os trechos de filmes e trailers citados em `examples/your-mind/film/assets/CREDITS.md`
-pertencem aos seus donos e não estão no repo. A foto da mosca
-`examples/your-mind/scenes/g3_writing_mapping/assets/fly.jpg` é de Alexis (iNaturalist), CC BY 4.0.
+pertencem aos seus donos e não estão no repo. A [foto da mosca](examples/your-mind/scenes/g3_writing_mapping/assets/fly.jpg) é de Alexis (iNaturalist), CC BY 4.0.

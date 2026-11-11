@@ -9,5 +9,5 @@ flock 9
 AVAIL=$(free -m | awk '/^Mem:/{print $7}')
 if [ "$AVAIL" -lt 3300 ]; then echo "available memory ${AVAIL} MB (< 3300): not running" >&2; exit 3; fi
 rm -rf "$OUT"
-systemd-run --user --scope -q -p MemoryMax=3000M -p MemorySwapMax=0 bash -c 'cd "$1" && npx hyperframes snapshot --at "$3" -o "$2"' _ "$PROJ" "$OUT" "$TIMES" 2>&1 | tail -2
+systemd-run --user --scope -q -p MemoryMax=3000M -p MemorySwapMax=0 bash -c 'cd "$1" && npx hyperframes@0.8.185 snapshot --at "$3" -o "$2"' _ "$PROJ" "$OUT" "$TIMES" 2>&1 | tail -2
 ls "$OUT" | head -40

@@ -138,7 +138,7 @@ $ST/progress_bar.sh v1 v1-bar && $ST/deliver.sh v1-bar  # progress bar and 1.35x
 ## Setup
 
 NVIDIA GPU (tested on an 8 GB RTX 5070), Linux with `systemd-run` (the scripts set memory caps), ffmpeg, Node 22+ (for
-`npx hyperframes`). The voice, word timing and music share one Python 3.11 environment:
+`npx hyperframes@0.8.185`). The voice, word timing and music share one Python 3.11 environment:
 
 ```bash
 python3.11 -m venv ~/.venvs/studio
@@ -152,6 +152,18 @@ The environment takes about 9 GB. Tested from scratch with torch 2.11 (cu128), V
 torch: the copy pip pulls in for `omnivoice` does not match the cu128 build and breaks the import. The OmniVoice and MusicGen
 weights download from Hugging Face on the first run. The cover needs ComfyUI with SDXL base (see `skills/ai-cover/SKILL.md`).
 `taskline`, if installed, shows progress.
+
+## What it runs and downloads
+
+Everything runs on your machine. The plugin sends no data anywhere: no telemetry, no API calls of its own. It downloads:
+
+- the OmniVoice, whisper and MusicGen weights from Hugging Face, on the first run of each step;
+- `hyperframes@0.8.185` from npm through `npx`, to render the scenes and time the words (it uses a local headless Chrome);
+- GSAP 3.14.2 from cdn.jsdelivr.net and the fonts from fonts.googleapis.com, loaded by the scene pages while they render;
+- the Python packages in [Setup](#setup), when you install them.
+
+The skills run the scripts in `studio/` with `python3`, `ffmpeg` and `systemd-run`, inside the video's own folder, and the
+`ai-cover` skill talks to a ComfyUI server on `127.0.0.1`.
 
 ## Model licenses
 
@@ -171,5 +183,4 @@ Made by [lewislf](https://github.com/lewislf) and [FeLiPeOLi7](https://github.co
 ## License
 
 Code under [MIT](LICENSE). The film and trailer clips cited in `examples/your-mind/film/assets/CREDITS.md`
-belong to their owners and are not in the repo. The fly photo
-`examples/your-mind/scenes/g3_writing_mapping/assets/fly.jpg` is by Alexis (iNaturalist), CC BY 4.0.
+belong to their owners and are not in the repo. The [fly photo](examples/your-mind/scenes/g3_writing_mapping/assets/fly.jpg) is by Alexis (iNaturalist), CC BY 4.0.

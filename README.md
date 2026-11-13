@@ -157,9 +157,13 @@ torch: the copy pip pulls in for `omnivoice` does not match the cu128 build and 
 weights download from Hugging Face on the first run. The cover needs ComfyUI with SDXL base (see `skills/ai-cover/SKILL.md`).
 `taskline`, if installed, shows progress.
 
-## What it runs and downloads
+## Where it runs
 
-Everything runs on your machine. The plugin sends no data anywhere: no telemetry, no API calls of its own. It downloads:
+Everything runs on your machine. The plugin sends no data anywhere: no telemetry, no API calls of its own. 
+
+## What it downloads
+
+It downloads:
 
 - the OmniVoice, whisper and MusicGen weights from Hugging Face, on the first run of each step;
 - `hyperframes@0.8.185` from npm through `npx`, to render the scenes and time the words (it uses a local headless Chrome);

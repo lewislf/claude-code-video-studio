@@ -155,9 +155,13 @@ que o pip puxa pro `omnivoice` não bate com o build cu128 e quebra o import. Os
 Hugging Face na primeira execução. A capa precisa do ComfyUI com o SDXL base (veja
 `skills/ai-cover/SKILL.md`). O `taskline`, se instalado, mostra o progresso.
 
-## O que roda e o que baixa
+## Onde roda 
 
-Tudo roda na sua máquina. O plugin não envia dado nenhum: sem telemetria, sem chamada de API própria. Ele baixa:
+Tudo roda na sua máquina. O plugin não envia dado nenhum: sem telemetria, sem chamada de API própria. 
+
+## O que baixa
+
+Ele baixa:
 
 - os pesos do OmniVoice, do whisper e do MusicGen do Hugging Face, na primeira execução de cada etapa;
 - o `hyperframes@0.8.185` do npm via `npx`, pra renderizar as cenas e marcar o tempo das palavras (usa um Chrome headless local);
@@ -176,7 +180,7 @@ O código daqui é MIT, mas os modelos têm termos próprios, e são eles que de
 - OmniVoice: o pacote `omnivoice` (VoiceStudio) é AGPL-3.0; os pesos `k2-fsa/OmniVoice` seguem o model card deles.
 - SDXL base: CreativeML Open RAIL++-M.
 
-Voz e música são geradas por IA; diga isso na descrição do vídeo.
+Diga que voz e música são gerados por IA na descrição do vídeo.
 
 ## Créditos
 
